@@ -1,0 +1,26 @@
+includes:
+    # - ../../vendor/phpstan/phpstan-strict-rules/rules.neon
+    - ../../vendor/phpstan/phpstan-phpunit/extension.neon
+    - ../../vendor/phpstan/phpstan-phpunit/rules.neon
+    - ../../vendor/nunomaduro/larastan/extension.neon
+
+parameters:
+    paths:
+        - ../../tests/lib
+    level: max
+    ignoreErrors:
+        ## phpstan 0.11 to 0.12
+        - '#has no typehint specified\.$#'
+        - '#has no return typehint specified\.$#'
+        - '#with no typehint specified\.$#'
+        - '#with no value type specified in iterable#'
+        - '#has no value type specified in iterable#'
+        # Related with https://github.com/phpstan/phpstan-mockery/issues/8
+        - '#Mockery.*::andReturn.*#'
+        ##
+        - '#Access to an undefined property.+Eloquent.+#'
+        - '#Calling method save\(\) on possibly null value of type.+#'
+        - '#function json_decode expects string, string\|false given#'
+        - '#function urlencode expects string, string\|null given#'
+        - '#Tests\\TestExceptionHandler::render\(\) should return#'
+    reportUnmatchedIgnoredErrors: false
