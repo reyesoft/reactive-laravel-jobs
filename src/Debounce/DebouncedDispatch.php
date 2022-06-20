@@ -22,14 +22,7 @@ class DebouncedDispatch extends PendingDispatch
     public function __construct($job)
     {
         parent::__construct($job);
-        /** @phpstan-ignore-next-line  */
-        if (Queue::size($this->job->queue) === 0) {
-             Cache::put('debounceable_' . $job->getIdForDebounce(), 1);
-            $id =1;
-        } else {
-            $id = Cache::increment('debounceable_' . $job->getIdForDebounce());
-        }
-        $this->getJob()->reactive_job_id = $id;
+        $this->getJob()->reactive_job_id = Cache::increment('debounceable_' . $job->getIdForDebounce());
     }
 
     /**

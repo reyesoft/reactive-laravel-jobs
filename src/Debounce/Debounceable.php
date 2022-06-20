@@ -38,21 +38,29 @@ trait Debounceable
         return (new DebouncedDispatch($this))->delay($delay);
     }
 
+    /**
+     * Like Laravel Unique jobs
+     *
+     * @return string|int
+     */
+    public function uniqueId()
+    {
+        return '';
+    }
+
     public function getIdForDebounce(): string
     {
-        return static::class;
+        return static::class.$this->uniqueId();
     }
 
     public function handle()
     {
-        Log::debug('handling id '.$this->reactive_job_id.' / '.$this->getIdForDebounce() );
-
-        if (Cache::decrement('debounceable_' . $this->getIdForDebounce()) > 0) {
+        Log::debug('IIII handling id '.$this->reactive_job_id.' / '.$this->getIdForDebounce() );
+        if (Cache::get('debounceable_' . $this->getIdForDebounce()) != $this->reactive_job_id) {
             return;
         }
 
         Cache::forget('debounceable_' . $this->getIdForDebounce());
-
 
         return $this->debouncedHandle();
     }
