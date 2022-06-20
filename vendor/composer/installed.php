@@ -6,7 +6,7 @@
     'aliases' => 
     array (
     ),
-    'reference' => '6556eb3e984642e15a931303331e4a50ac5dda7e',
+    'reference' => '73d263a8adae6372e6625761e33bf73d38eabcc5',
     'name' => 'reyesoft/reactive-laravel-jobs',
   ),
   'versions' => 
@@ -868,7 +868,7 @@
       'aliases' => 
       array (
       ),
-      'reference' => '6556eb3e984642e15a931303331e4a50ac5dda7e',
+      'reference' => '73d263a8adae6372e6625761e33bf73d38eabcc5',
     ),
     'rhumsaa/uuid' => 
     array (

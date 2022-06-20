@@ -55,8 +55,7 @@ trait Debounceable
 
     public function handle()
     {
-        Log::debug('IIII handling id '.$this->reactive_job_id.' / '.$this->getIdForDebounce() );
-        if (Cache::get('debounceable_' . $this->getIdForDebounce()) != $this->reactive_job_id) {
+        if (intval(Cache::get('debounceable_' . $this->getIdForDebounce(), 0)) !== $this->reactive_job_id) {
             return;
         }
 
