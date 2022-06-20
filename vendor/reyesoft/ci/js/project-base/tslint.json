@@ -1,0 +1,9 @@
+{
+    "extends": [
+        "node_modules/reyesoft-ci/js/rules/tslint.json"
+    ],
+    "rules": {
+        "directive-selector": [true, "attribute", ["app", "rs", "colmena"], "camelCase"],
+        "component-selector": [true, "element", ["app", "rs", "colmena"], "kebab-case"]
+    }
+}

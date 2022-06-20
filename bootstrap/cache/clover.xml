@@ -1,0 +1,2077 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1627504416">
+  <project timestamp="1627504416">
+    <file name="/home/rsk/desarrollo/laravel-json-api/src/Contracts/FilterInterface.php">
+      <metrics loc="24" ncloc="12" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+    </file>
+    <file name="/home/rsk/desarrollo/laravel-json-api/src/Core/Action.php">
+      <class name="Reyesoft\JsonApi\Core\Action" namespace="global">
+        <metrics complexity="12" methods="8" coveredmethods="8" conditionals="0" coveredconditionals="0" statements="19" coveredstatements="19" elements="27" coveredelements="27"/>
+      </class>
+      <line num="28" type="method" name="__construct" visibility="public" complexity="2" crap="2" count="52"/>
+      <line num="35" type="stmt" count="52"/>
+      <line num="36" type="stmt" count="52"/>
+      <line num="37" type="stmt" count="52"/>
+      <line num="38" type="stmt" count="52"/>
+      <line num="39" type="stmt" count="52"/>
+      <line num="40" type="stmt" count="9"/>
+      <line num="42" type="stmt" count="52"/>
+      <line num="46" type="method" name="getActionName" visibility="public" complexity="1" crap="1" count="52"/>
+      <line num="48" type="stmt" count="52"/>
+      <line num="51" type="method" name="getSchema" visibility="public" complexity="1" crap="1" count="46"/>
+      <line num="53" type="stmt" count="46"/>
+      <line num="56" type="method" name="getParameters" visibility="public" complexity="1" crap="1" count="43"/>
+      <line num="58" type="stmt" count="43"/>
+      <line num="61" type="method" name="isSaving" visibility="public" complexity="1" crap="1" count="52"/>
+      <line num="64" type="stmt" count="52"/>
+      <line num="67" type="method" name="getId" visibility="public" complexity="1" crap="1" count="15"/>
+      <line num="69" type="stmt" count="15"/>
+      <line num="72" type="method" name="getData" visibility="public" complexity="1" crap="1" count="20"/>
+      <line num="74" type="stmt" count="20"/>
+      <line num="84" type="method" name="callModelPolicyOrFail" visibility="public" complexity="4" crap="4" count="38"/>
+      <line num="86" type="stmt" count="38"/>
+      <line num="87" type="stmt" count="10"/>
+      <line num="89" type="stmt" count="37"/>
+      <line num="91" type="stmt" count="38"/>
+      <line num="92" type="stmt" count="38"/>
+      <line num="93" type="stmt" count="1"/>
+      <metrics loc="96" ncloc="83" classes="1" methods="8" coveredmethods="8" conditionals="0" coveredconditionals="0" statements="19" coveredstatements="19" elements="27" coveredelements="27"/>
+    </file>
+    <file name="/home/rsk/desarrollo/laravel-json-api/src/Core/CruHelper.php">
+      <class name="Reyesoft\JsonApi\Core\CruHelper" namespace="global">
+        <metrics complexity="2" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="1" elements="2" coveredelements="2"/>
+      </class>
+      <line num="15" type="method" name="canAccess" visibility="public" complexity="2" crap="2" count="41"/>
+      <line num="17" type="stmt" count="41"/>
+      <metrics loc="19" ncloc="13" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="1" elements="2" coveredelements="2"/>
+    </file>
+    <file name="/home/rsk/desarrollo/laravel-json-api/src/Core/EloquentHelper.php">
+      <class name="Reyesoft\JsonApi\Core\EloquentHelper" namespace="global">
+        <metrics complexity="4" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="8" coveredstatements="8" elements="11" coveredelements="11"/>
+      </class>
+      <line num="19" type="method" name="beginTransaction" visibility="public" complexity="2" crap="2" count="11"/>
+      <line num="21" type="stmt" count="11"/>
+      <line num="22" type="stmt" count="10"/>
+      <line num="24" type="stmt" count="11"/>
+      <line num="25" type="stmt" count="11"/>
+      <line num="27" type="method" name="commitTransaction" visibility="public" complexity="1" crap="1" count="8"/>
+      <line num="29" type="stmt" count="8"/>
+      <line num="30" type="stmt" count="8"/>
+      <line num="32" type="method" name="rollbackTransaction" visibility="public" complexity="1" crap="1" count="3"/>
+      <line num="34" type="stmt" count="3"/>
+      <line num="35" type="stmt" count="3"/>
+      <metrics loc="37" ncloc="31" classes="1" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="8" coveredstatements="8" elements="11" coveredelements="11"/>
+    </file>
+    <file name="/home/rsk/desarrollo/laravel-json-api/src/Core/EncoderBuilder.php">
+      <class name="Reyesoft\JsonApi\Core\EncoderBuilder" namespace="global">
+        <metrics complexity="6" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="18" coveredstatements="18" elements="21" coveredelements="21"/>
+      </class>
+      <line num="18" type="method" name="buildEncoderArrayFromSchema" visibility="public" complexity="3" crap="3" count="38"/>
+      <line num="22" type="stmt" count="38"/>
+      <line num="26" type="stmt" count="38"/>
+      <line num="28" type="stmt" count="37"/>
+      <line num="29" type="stmt" count="37"/>
+      <line num="30" type="stmt" count="37"/>
+      <line num="31" type="stmt" count="37"/>
+      <line num="32" type="stmt" count="37"/>
+      <line num="33" type="stmt" count="37"/>
+      <line num="34" type="stmt" count="37"/>
+      <line num="35" type="stmt" count="37"/>
+      <line num="39" type="stmt" count="38"/>
+      <line num="42" type="method" name="buildFromSchema" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="44" type="stmt" count="1"/>
+      <line num="46" type="stmt" count="1"/>
+      <line num="49" type="method" name="buildFromArray" visibility="public" complexity="2" crap="2" count="1"/>
+      <line num="51" type="stmt" count="1"/>
+      <line num="52" type="stmt" count="1"/>
+      <line num="53" type="stmt" count="1"/>
+      <line num="54" type="stmt" count="1"/>
+      <line num="57" type="stmt" count="1"/>
+      <metrics loc="59" ncloc="50" classes="1" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="18" coveredstatements="18" elements="21" coveredelements="21"/>
+    </file>
+    <file name="/home/rsk/desarrollo/laravel-json-api/src/Core/Helpers/IncludedSorter.php">
+      <class name="Reyesoft\JsonApi\Core\Helpers\IncludedSorter" namespace="global">
+        <metrics complexity="23" methods="6" coveredmethods="6" conditionals="0" coveredconditionals="0" statements="41" coveredstatements="41" elements="47" coveredelements="47"/>
+      </class>
+      <line num="25" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="12"/>
+      <line num="27" type="stmt" count="12"/>
+      <line num="28" type="stmt" count="12"/>
+      <line num="30" type="stmt" count="12"/>
+      <line num="33" type="method" name="getResourcesArray" visibility="private" complexity="3" crap="3" count="12"/>
+      <line num="35" type="stmt" count="12"/>
+      <line num="36" type="stmt" count="12"/>
+      <line num="37" type="stmt" count="12"/>
+      <line num="38" type="stmt" count="12"/>
+      <line num="39" type="stmt" count="10"/>
+      <line num="42" type="stmt" count="12"/>
+      <line num="45" type="method" name="processAllData" visibility="private" complexity="8" crap="8" count="12"/>
+      <line num="47" type="stmt" count="12"/>
+      <line num="48" type="stmt" count="12"/>
+      <line num="49" type="stmt" count="12"/>
+      <line num="50" type="stmt" count="12"/>
+      <line num="55" type="stmt" count="12"/>
+      <line num="56" type="stmt" count="12"/>
+      <line num="59" type="stmt" count="12"/>
+      <line num="60" type="stmt" count="12"/>
+      <line num="61" type="stmt" count="12"/>
+      <line num="63" type="stmt" count="12"/>
+      <line num="66" type="stmt" count="2"/>
+      <line num="67" type="stmt" count="1"/>
+      <line num="70" type="stmt" count="1"/>
+      <line num="71" type="stmt" count="1"/>
+      <line num="76" type="method" name="processResourceRelationships" visibility="private" complexity="8" crap="8" count="12"/>
+      <line num="78" type="stmt" count="12"/>
+      <line num="80" type="stmt" count="12"/>
+      <line num="81" type="stmt" count="12"/>
+      <line num="82" type="stmt" count="12"/>
+      <line num="84" type="stmt" count="12"/>
+      <line num="85" type="stmt" count="11"/>
+      <line num="86" type="stmt" count="11"/>
+      <line num="89" type="stmt" count="11"/>
+      <line num="91" type="stmt" count="10"/>
+      <line num="92" type="stmt" count="10"/>
+      <line num="93" type="stmt" count="5"/>
+      <line num="94" type="stmt" count="10"/>
+      <line num="98" type="stmt" count="11"/>
+      <line num="99" type="stmt" count="11"/>
+      <line num="100" type="stmt" count="6"/>
+      <line num="101" type="stmt" count="6"/>
+      <line num="108" type="method" name="getSortedResources" visibility="public" complexity="1" crap="1" count="11"/>
+      <line num="110" type="stmt" count="11"/>
+      <line num="113" type="method" name="isIdNew" visibility="public" complexity="2" crap="2" count="9"/>
+      <line num="115" type="stmt" count="9"/>
+      <metrics loc="117" ncloc="106" classes="1" methods="6" coveredmethods="6" conditionals="0" coveredconditionals="0" statements="41" coveredstatements="41" elements="47" coveredelements="47"/>
+    </file>
+    <file name="/home/rsk/desarrollo/laravel-json-api/src/Core/Helpers/Lang.php">
+      <class name="Reyesoft\JsonApi\Core\Helpers\Lang" namespace="global">
+        <metrics complexity="2" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="3" elements="4" coveredelements="4"/>
+      </class>
+      <line num="18" type="method" name="get" visibility="public" complexity="2" crap="2" count="13"/>
+      <line num="20" type="stmt" count="13"/>
+      <line num="21" type="stmt" count="13"/>
+      <line num="27" type="stmt" count="13"/>
+      <metrics loc="29" ncloc="21" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="3" elements="4" coveredelements="4"/>
+    </file>
+    <file name="/home/rsk/desarrollo/laravel-json-api/src/Core/Helpers/PendingSaves.php">
+      <class name="Reyesoft\JsonApi\Core\Helpers\PendingSaves" namespace="global">
+        <metrics complexity="2" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="2" elements="3" coveredelements="3"/>
+      </class>
+      <line num="17" type="method" name="call" visibility="public" complexity="2" crap="2" count="8"/>
+      <line num="19" type="stmt" count="8"/>
+      <line num="20" type="stmt" count="8"/>
+      <metrics loc="23" ncloc="17" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="2" elements="3" coveredelements="3"/>
+    </file>
+    <file name="/home/rsk/desarrollo/laravel-json-api/src/Core/Helpers/SchemaValidators.php">
+      <class name="Reyesoft\JsonApi\Core\Helpers\SchemaValidators" namespace="global">
+        <metrics complexity="18" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="32" coveredstatements="32" elements="35" coveredelements="35"/>
+      </class>
+      <line num="19" type="method" name="validateRelationshipMember" visibility="public" complexity="3" crap="3" count="15"/>
+      <line num="21" type="stmt" count="15"/>
+      <line num="22" type="stmt" count="1"/>
+      <line num="24" type="stmt" count="14"/>
+      <line num="25" type="stmt" count="1"/>
+      <line num="29" type="method" name="validateDocumentDataOrFail" visibility="public" complexity="6" crap="6" count="20"/>
+      <line num="32" type="stmt" count="20"/>
+      <line num="33" type="stmt" count="2"/>
+      <line num="35" type="stmt" count="18"/>
+      <line num="36" type="stmt" count="18"/>
+      <line num="39" type="stmt" count="14"/>
+      <line num="40" type="stmt" count="12"/>
+      <line num="41" type="stmt" count="1"/>
+      <line num="44" type="stmt" count="11"/>
+      <line num="45" type="stmt" count="11"/>
+      <line num="46" type="stmt" count="1"/>
+      <line num="51" type="method" name="validateResourceDataOrFail" visibility="private" complexity="9" crap="9" count="18"/>
+      <line num="53" type="stmt" count="18"/>
+      <line num="54" type="stmt" count="1"/>
+      <line num="57" type="stmt" count="17"/>
+      <line num="58" type="stmt" count="1"/>
+      <line num="61" type="stmt" count="16"/>
+      <line num="63" type="stmt" count="16"/>
+      <line num="64" type="stmt" count="16"/>
+      <line num="65" type="stmt" count="16"/>
+      <line num="67" type="stmt" count="16"/>
+      <line num="69" type="stmt" count="16"/>
+      <line num="70" type="stmt" count="15"/>
+      <line num="71" type="stmt" count="14"/>
+      <line num="74" type="stmt" count="15"/>
+      <line num="76" type="stmt" count="12"/>
+      <line num="79" type="stmt" count="15"/>
+      <line num="80" type="stmt" count="15"/>
+      <line num="81" type="stmt" count="1"/>
+      <line num="83" type="stmt" count="14"/>
+      <metrics loc="88" ncloc="77" classes="1" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="32" coveredstatements="32" elements="35" coveredelements="35"/>
+    </file>
+    <file name="/home/rsk/desarrollo/laravel-json-api/src/Core/JsonApiHelper.php">
+      <class name="Reyesoft\JsonApi\Core\JsonApiHelper" namespace="global">
+        <metrics complexity="21" methods="7" coveredmethods="7" conditionals="0" coveredconditionals="0" statements="28" coveredstatements="28" elements="35" coveredelements="35"/>
+      </class>
+      <line num="19" type="method" name="validateKeysOrFail" visibility="public" complexity="2" crap="2" count="6"/>
+      <line num="21" type="stmt" count="6"/>
+      <line num="22" type="stmt" count="1"/>
+      <line num="26" type="method" name="isModeActivated" visibility="public" complexity="1" crap="1" count="16"/>
+      <line num="28" type="stmt" count="16"/>
+      <line num="34" type="method" name="dissociateRequiredOnRelationData" visibility="public" complexity="4" crap="4" count="9"/>
+      <line num="36" type="stmt" count="9"/>
+      <line num="37" type="stmt" count="9"/>
+      <line num="40" type="method" name="checkRelationshipsOrFail" visibility="public" complexity="3" crap="3" count="17"/>
+      <line num="42" type="stmt" count="17"/>
+      <line num="43" type="stmt" count="2"/>
+      <line num="46" type="stmt" count="15"/>
+      <line num="47" type="stmt" count="15"/>
+      <line num="48" type="stmt" count="15"/>
+      <line num="49" type="stmt" count="15"/>
+      <line num="50" type="stmt" count="1"/>
+      <line num="54" type="method" name="replaceIdOnDocumentRelationships" visibility="public" complexity="3" crap="3" count="6"/>
+      <line num="56" type="stmt" count="6"/>
+      <line num="59" type="stmt" count="6"/>
+      <line num="60" type="stmt" count="6"/>
+      <line num="61" type="stmt" count="6"/>
+      <line num="66" type="method" name="replaceIdOnResourceRelationships" visibility="public" complexity="6" crap="6" count="11"/>
+      <line num="68" type="stmt" count="11"/>
+      <line num="69" type="stmt" count="7"/>
+      <line num="71" type="stmt" count="11"/>
+      <line num="72" type="stmt" count="10"/>
+      <line num="73" type="stmt" count="10"/>
+      <line num="76" type="stmt" count="10"/>
+      <line num="78" type="stmt" count="9"/>
+      <line num="80" type="stmt" count="9"/>
+      <line num="83" type="stmt" count="10"/>
+      <line num="84" type="stmt" count="10"/>
+      <line num="89" type="method" name="replaceIdOnRelation" visibility="private" complexity="2" crap="2" count="10"/>
+      <line num="91" type="stmt" count="10"/>
+      <line num="92" type="stmt" count="5"/>
+      <metrics loc="95" ncloc="84" classes="1" methods="7" coveredmethods="7" conditionals="0" coveredconditionals="0" statements="28" coveredstatements="28" elements="35" coveredelements="35"/>
+    </file>
+    <file name="/home/rsk/desarrollo/laravel-json-api/src/Core/JsonApiManager.php">
+      <class name="Reyesoft\JsonApi\Core\JsonApiManager" namespace="global">
+        <metrics complexity="5" methods="5" coveredmethods="5" conditionals="0" coveredconditionals="0" statements="8" coveredstatements="8" elements="13" coveredelements="13"/>
+      </class>
+      <line num="22" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="49"/>
+      <line num="24" type="stmt" count="49"/>
+      <line num="25" type="stmt" count="49"/>
+      <line num="26" type="stmt" count="49"/>
+      <line num="27" type="stmt" count="49"/>
+      <line num="30" type="method" name="eloquentHelper" visibility="public" complexity="1" crap="1" count="11"/>
+      <line num="32" type="stmt" count="11"/>
+      <line num="35" type="method" name="meta" visibility="public" complexity="1" crap="1" count="37"/>
+      <line num="37" type="stmt" count="37"/>
+      <line num="40" type="method" name="pendingFires" visibility="public" complexity="1" crap="1" count="48"/>
+      <line num="42" type="stmt" count="48"/>
+      <line num="45" type="method" name="pendingSaves" visibility="public" complexity="1" crap="1" count="9"/>
+      <line num="47" type="stmt" count="9"/>
+      <metrics loc="49" ncloc="43" classes="1" methods="5" coveredmethods="5" conditionals="0" coveredconditionals="0" statements="8" coveredstatements="8" elements="13" coveredelements="13"/>
+    </file>
+    <file name="/home/rsk/desarrollo/laravel-json-api/src/Core/MetaWarnings.php">
+      <class name="Reyesoft\JsonApi\Core\MetaWarnings" namespace="global">
+        <metrics complexity="4" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="5" coveredstatements="5" elements="7" coveredelements="7"/>
+      </class>
+      <line num="22" type="method" name="addWarning" visibility="public" complexity="2" crap="2" count="1"/>
+      <line num="24" type="stmt" count="1"/>
+      <line num="25" type="stmt" count="1"/>
+      <line num="26" type="stmt" count="1"/>
+      <line num="29" type="stmt" count="1"/>
+      <line num="32" type="method" name="getWarningsArray" visibility="public" complexity="2" crap="2" count="37"/>
+      <line num="34" type="stmt" count="37"/>
+      <metrics loc="36" ncloc="25" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="5" coveredstatements="5" elements="7" coveredelements="7"/>
+    </file>
+    <file name="/home/rsk/desarrollo/laravel-json-api/src/Core/PendingFires.php">
+      <class name="Reyesoft\JsonApi\Core\PendingFires" namespace="global">
+        <metrics complexity="4" methods="4" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="4" elements="8" coveredelements="8"/>
+      </class>
+      <line num="17" type="method" name="add" visibility="public" complexity="1" crap="1" count="20"/>
+      <line num="19" type="stmt" count="20"/>
+      <line num="22" type="method" name="clear" visibility="public" complexity="1" crap="1" count="3"/>
+      <line num="24" type="stmt" count="3"/>
+      <line num="27" type="method" name="all" visibility="public" complexity="1" crap="1" count="45"/>
+      <line num="29" type="stmt" count="45"/>
+      <line num="32" type="method" name="remove" visibility="public" complexity="1" crap="1" count="17"/>
+      <line num="34" type="stmt" count="17"/>
+      <metrics loc="36" ncloc="30" classes="1" methods="4" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="4" elements="8" coveredelements="8"/>
+    </file>
+    <file name="/home/rsk/desarrollo/laravel-json-api/src/Core/QueryParser.php">
+      <class name="Reyesoft\JsonApi\Core\QueryParser" namespace="global">
+        <metrics complexity="21" methods="9" coveredmethods="9" conditionals="0" coveredconditionals="0" statements="43" coveredstatements="43" elements="52" coveredelements="52"/>
+      </class>
+      <line num="22" type="method" name="checkValidParamsOrFail" visibility="public" complexity="2" crap="2" count="59"/>
+      <line num="24" type="stmt" count="59"/>
+      <line num="28" type="stmt" count="59"/>
+      <line num="29" type="stmt" count="58"/>
+      <line num="30" type="stmt" count="58"/>
+      <line num="32" type="stmt" count="58"/>
+      <line num="33" type="stmt" count="1"/>
+      <line num="37" type="method" name="getFiltering" visibility="public" complexity="1" crap="1" count="56"/>
+      <line num="39" type="stmt" count="56"/>
+      <line num="42" type="method" name="getPaging" visibility="public" complexity="2" crap="2" count="58"/>
+      <line num="44" type="stmt" count="58"/>
+      <line num="46" type="stmt" count="58"/>
+      <line num="47" type="stmt" count="1"/>
+      <line num="50" type="stmt" count="57"/>
+      <line num="56" type="method" name="getSortParameters" visibility="private" complexity="5" crap="5" count="59"/>
+      <line num="58" type="stmt" count="59"/>
+      <line num="59" type="stmt" count="59"/>
+      <line num="60" type="stmt" count="51"/>
+      <line num="63" type="stmt" count="9"/>
+      <line num="64" type="stmt" count="9"/>
+      <line num="65" type="stmt" count="1"/>
+      <line num="67" type="stmt" count="9"/>
+      <line num="68" type="stmt" count="9"/>
+      <line num="69" type="stmt" count="1"/>
+      <line num="74" type="method" name="getParamStringOrFail" visibility="private" complexity="2" crap="2" count="59"/>
+      <line num="76" type="stmt" count="59"/>
+      <line num="77" type="stmt" count="59"/>
+      <line num="78" type="stmt" count="58"/>
+      <line num="81" type="stmt" count="1"/>
+      <line num="84" type="method" name="getParamArrayOrFail" visibility="private" complexity="2" crap="2" count="57"/>
+      <line num="86" type="stmt" count="57"/>
+      <line num="87" type="stmt" count="57"/>
+      <line num="88" type="stmt" count="57"/>
+      <line num="91" type="stmt" count="1"/>
+      <line num="94" type="method" name="checkUnrecognized" visibility="private" complexity="4" crap="4" count="59"/>
+      <line num="96" type="stmt" count="59"/>
+      <line num="97" type="stmt" count="57"/>
+      <line num="100" type="stmt" count="2"/>
+      <line num="102" type="stmt" count="2"/>
+      <line num="103" type="stmt" count="1"/>
+      <line num="106" type="stmt" count="1"/>
+      <line num="108" type="stmt" count="1"/>
+      <line num="112" type="method" name="getUnrecognizedParameters" visibility="private" complexity="2" crap="2" count="1"/>
+      <line num="115" type="stmt" count="1"/>
+      <line num="116" type="stmt" count="1"/>
+      <line num="117" type="stmt" count="1"/>
+      <line num="118" type="stmt" count="1"/>
+      <line num="119" type="stmt" count="1"/>
+      <line num="121" type="stmt" count="1"/>
+      <line num="123" type="stmt" count="1"/>
+      <line num="126" type="method" name="createInvalidQueryErrors" visibility="protected" complexity="1" crap="1" count="2"/>
+      <line num="132" type="stmt" count="2"/>
+      <metrics loc="135" ncloc="119" classes="1" methods="9" coveredmethods="9" conditionals="0" coveredconditionals="0" statements="43" coveredstatements="43" elements="52" coveredelements="52"/>
+    </file>
+    <file name="/home/rsk/desarrollo/laravel-json-api/src/Core/RequestHandler.php">
+      <class name="Reyesoft\JsonApi\Core\RequestHandler" namespace="global">
+        <metrics complexity="38" methods="12" coveredmethods="12" conditionals="0" coveredconditionals="0" statements="80" coveredstatements="80" elements="92" coveredelements="92"/>
+      </class>
+      <line num="34" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="58"/>
+      <line num="36" type="stmt" count="58"/>
+      <line num="39" type="method" name="handle" visibility="public" complexity="2" crap="2" count="58"/>
+      <line num="41" type="stmt" count="58"/>
+      <line num="43" type="stmt" count="52"/>
+      <line num="44" type="stmt" count="20"/>
+      <line num="46" type="stmt" count="44"/>
+      <line num="49" type="stmt" count="37"/>
+      <line num="52" type="method" name="handleNotSavingRequest" visibility="private" complexity="1" crap="1" count="44"/>
+      <line num="54" type="stmt" count="44"/>
+      <line num="55" type="stmt" count="44"/>
+      <line num="56" type="stmt" count="44"/>
+      <line num="59" type="method" name="handleSavingRequest" visibility="private" complexity="2" crap="2" count="20"/>
+      <line num="61" type="stmt" count="20"/>
+      <line num="62" type="stmt" count="20"/>
+      <line num="64" type="stmt" count="12"/>
+      <line num="66" type="stmt" count="12"/>
+      <line num="67" type="stmt" count="11"/>
+      <line num="70" type="stmt" count="11"/>
+      <line num="71" type="stmt" count="11"/>
+      <line num="72" type="stmt" count="8"/>
+      <line num="73" type="stmt" count="3"/>
+      <line num="74" type="stmt" count="3"/>
+      <line num="76" type="stmt" count="3"/>
+      <line num="80" type="method" name="handleSavingRequestProcess" visibility="private" complexity="9" crap="9" count="12"/>
+      <line num="82" type="stmt" count="12"/>
+      <line num="83" type="stmt" count="12"/>
+      <line num="84" type="stmt" count="12"/>
+      <line num="87" type="stmt" count="12"/>
+      <line num="90" type="stmt" count="12"/>
+      <line num="92" type="stmt" count="9"/>
+      <line num="94" type="stmt" count="9"/>
+      <line num="95" type="stmt" count="6"/>
+      <line num="96" type="stmt" count="1"/>
+      <line num="98" type="stmt" count="6"/>
+      <line num="99" type="stmt" count="6"/>
+      <line num="100" type="stmt" count="6"/>
+      <line num="104" type="stmt" count="9"/>
+      <line num="106" type="stmt" count="9"/>
+      <line num="107" type="stmt" count="1"/>
+      <line num="111" type="method" name="callPolicyOrFail" visibility="private" complexity="3" crap="3" count="47"/>
+      <line num="113" type="stmt" count="47"/>
+      <line num="114" type="stmt" count="47"/>
+      <line num="115" type="stmt" count="1"/>
+      <line num="119" type="method" name="getResourcesArraySortedForSave" visibility="private" complexity="1" crap="1" count="12"/>
+      <line num="121" type="stmt" count="12"/>
+      <line num="124" type="method" name="getDataFromService" visibility="private" complexity="5" crap="5" count="46"/>
+      <line num="126" type="stmt" count="46"/>
+      <line num="127" type="stmt" count="46"/>
+      <line num="128" type="stmt" count="46"/>
+      <line num="129" type="stmt" count="40"/>
+      <line num="130" type="stmt" count="39"/>
+      <line num="131" type="stmt" count="15"/>
+      <line num="133" type="stmt" count="15"/>
+      <line num="135" type="stmt" count="39"/>
+      <line num="137" type="stmt" count="37"/>
+      <line num="139" type="stmt" count="37"/>
+      <line num="142" type="method" name="saveResource" visibility="private" complexity="4" crap="4" count="11"/>
+      <line num="144" type="stmt" count="11"/>
+      <line num="146" type="stmt" count="11"/>
+      <line num="147" type="stmt" count="9"/>
+      <line num="148" type="stmt" count="9"/>
+      <line num="149" type="stmt" count="9"/>
+      <line num="150" type="stmt" count="9"/>
+      <line num="151" type="stmt" count="9"/>
+      <line num="152" type="stmt" count="9"/>
+      <line num="156" type="stmt" count="11"/>
+      <line num="158" type="stmt" count="11"/>
+      <line num="159" type="stmt" count="9"/>
+      <line num="163" type="stmt" count="11"/>
+      <line num="166" type="method" name="getDataService" visibility="protected" complexity="2" crap="2" count="46"/>
+      <line num="168" type="stmt" count="46"/>
+      <line num="169" type="stmt" count="46"/>
+      <line num="170" type="stmt" count="45"/>
+      <line num="173" type="stmt" count="1"/>
+      <line num="175" type="stmt" count="1"/>
+      <line num="178" type="method" name="getResponse" visibility="public" complexity="4" crap="4" count="38"/>
+      <line num="180" type="stmt" count="38"/>
+      <line num="181" type="stmt" count="38"/>
+      <line num="182" type="stmt" count="38"/>
+      <line num="184" type="stmt" count="38"/>
+      <line num="186" type="stmt" count="6"/>
+      <line num="188" type="stmt" count="1"/>
+      <line num="190" type="stmt" count="37"/>
+      <line num="192" type="stmt" count="37"/>
+      <line num="199" type="method" name="filterReceivedAttributesWithSchema" visibility="private" complexity="4" crap="4" count="11"/>
+      <line num="201" type="stmt" count="11"/>
+      <line num="203" type="stmt" count="11"/>
+      <line num="204" type="stmt" count="11"/>
+      <line num="207" type="stmt" count="11"/>
+      <line num="209" type="stmt" count="11"/>
+      <line num="212" type="stmt" count="4"/>
+      <metrics loc="215" ncloc="198" classes="1" methods="12" coveredmethods="12" conditionals="0" coveredconditionals="0" statements="80" coveredstatements="80" elements="92" coveredelements="92"/>
+    </file>
+    <file name="/home/rsk/desarrollo/laravel-json-api/src/Core/SchemaProvider.php">
+      <class name="Reyesoft\JsonApi\Core\SchemaProvider" namespace="global">
+        <metrics complexity="35" methods="16" coveredmethods="16" conditionals="0" coveredconditionals="0" statements="61" coveredstatements="61" elements="77" coveredelements="77"/>
+      </class>
+      <line num="70" type="method" name="__construct" visibility="public" complexity="2" crap="2" count="67"/>
+      <line num="72" type="stmt" count="67"/>
+      <line num="73" type="stmt" count="66"/>
+      <line num="76" type="stmt" count="67"/>
+      <line num="77" type="stmt" count="67"/>
+      <line num="79" type="stmt" count="67"/>
+      <line num="80" type="stmt" count="67"/>
+      <line num="82" type="stmt" count="67"/>
+      <line num="89" type="method" name="addAttribute" visibility="public" complexity="1" crap="1" count="59"/>
+      <line num="91" type="stmt" count="59"/>
+      <line num="94" type="method" name="addRelationship" visibility="public" complexity="1" crap="1" count="57"/>
+      <line num="96" type="stmt" count="57"/>
+      <line num="99" type="method" name="getResourceClass" visibility="public" complexity="1" crap="1" count="55"/>
+      <line num="101" type="stmt" count="55"/>
+      <line num="104" type="method" name="getResourceInstance" visibility="public" complexity="1" crap="1" count="52"/>
+      <line num="106" type="stmt" count="52"/>
+      <line num="108" type="stmt" count="52"/>
+      <line num="114" type="method" name="getModelInstance" visibility="public" complexity="1" crap="1" count="45"/>
+      <line num="116" type="stmt" count="45"/>
+      <line num="119" type="method" name="getFilterClass" visibility="public" complexity="2" crap="2" count="21"/>
+      <line num="121" type="stmt" count="21"/>
+      <line num="122" type="stmt" count="4"/>
+      <line num="125" type="stmt" count="17"/>
+      <line num="128" type="method" name="getAttributesSchema" visibility="public" complexity="1" crap="1" count="67"/>
+      <line num="130" type="stmt" count="67"/>
+      <line num="133" type="method" name="getRelationshipsSchema" visibility="public" complexity="1" crap="1" count="67"/>
+      <line num="135" type="stmt" count="67"/>
+      <line num="138" type="method" name="getId" visibility="public" complexity="1" crap="1" count="39"/>
+      <line num="140" type="stmt" count="39"/>
+      <line num="143" type="method" name="getType" visibility="public" complexity="1" crap="1" count="45"/>
+      <line num="145" type="stmt" count="45"/>
+      <line num="148" type="method" name="getAttributes" visibility="public" complexity="5" crap="5" count="39"/>
+      <line num="150" type="stmt" count="39"/>
+      <line num="152" type="stmt" count="39"/>
+      <line num="153" type="stmt" count="39"/>
+      <line num="154" type="stmt" count="39"/>
+      <line num="155" type="stmt" count="4"/>
+      <line num="157" type="stmt" count="39"/>
+      <line num="158" type="stmt" count="4"/>
+      <line num="159" type="stmt" count="39"/>
+      <line num="160" type="stmt" count="39"/>
+      <line num="161" type="stmt" count="28"/>
+      <line num="165" type="stmt" count="39"/>
+      <line num="168" type="method" name="getAttributesToShow" visibility="private" complexity="2" crap="2" count="40"/>
+      <line num="170" type="stmt" count="40"/>
+      <line num="171" type="stmt" count="1"/>
+      <line num="174" type="stmt" count="39"/>
+      <line num="175" type="stmt" count="39"/>
+      <line num="176" type="stmt" count="39"/>
+      <line num="177" type="stmt" count="39"/>
+      <line num="178" type="stmt" count="39"/>
+      <line num="179" type="stmt" count="39"/>
+      <line num="182" type="method" name="getRelationships" visibility="public" complexity="9" crap="9" count="39"/>
+      <line num="184" type="stmt" count="39"/>
+      <line num="185" type="stmt" count="13"/>
+      <line num="188" type="stmt" count="39"/>
+      <line num="189" type="stmt" count="39"/>
+      <line num="190" type="stmt" count="38"/>
+      <line num="191" type="stmt" count="29"/>
+      <line num="193" type="stmt" count="38"/>
+      <line num="194" type="stmt" count="38"/>
+      <line num="195" type="stmt" count="38"/>
+      <line num="196" type="stmt" count="38"/>
+      <line num="197" type="stmt" count="38"/>
+      <line num="200" type="stmt" count="38"/>
+      <line num="201" type="stmt" count="38"/>
+      <line num="209" type="stmt" count="38"/>
+      <line num="211" type="stmt" count="38"/>
+      <line num="212" type="stmt" count="26"/>
+      <line num="216" type="stmt" count="39"/>
+      <line num="219" type="method" name="getPolicy" visibility="public" complexity="1" crap="1" count="46"/>
+      <line num="221" type="stmt" count="46"/>
+      <line num="223" type="stmt" count="46"/>
+      <line num="226" type="method" name="getServiceClass" visibility="public" complexity="2" crap="2" count="38"/>
+      <line num="228" type="stmt" count="38"/>
+      <line num="229" type="stmt" count="38"/>
+      <line num="232" type="stmt" count="3"/>
+      <metrics loc="242" ncloc="202" classes="1" methods="16" coveredmethods="16" conditionals="0" coveredconditionals="0" statements="61" coveredstatements="61" elements="77" coveredelements="77"/>
+    </file>
+    <file name="/home/rsk/desarrollo/laravel-json-api/src/Core/SchemaRelationsTrait.php">
+      <class name="Reyesoft\JsonApi\Core\SchemaRelationsTrait" namespace="global">
+        <metrics complexity="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+      </class>
+      <metrics loc="18" ncloc="9" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+    </file>
+    <file name="/home/rsk/desarrollo/laravel-json-api/src/Documentor/AttributeDocumentor.php">
+      <class name="Reyesoft\JsonApi\Documentor\AttributeDocumentor" namespace="global">
+        <metrics complexity="2" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="3" elements="5" coveredelements="5"/>
+      </class>
+      <line num="20" type="method" name="getFilterName" visibility="public" complexity="1" crap="1" count="3"/>
+      <line num="23" type="stmt" count="3"/>
+      <line num="25" type="stmt" count="3"/>
+      <line num="28" type="method" name="getRulesForDocumentor" visibility="public" complexity="1" crap="1" count="6"/>
+      <line num="30" type="stmt" count="6"/>
+      <metrics loc="32" ncloc="25" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="3" elements="5" coveredelements="5"/>
+    </file>
+    <file name="/home/rsk/desarrollo/laravel-json-api/src/Documentor/HasCruTrait.php">
+      <class name="Reyesoft\JsonApi\Documentor\HasCruTrait" namespace="global">
+        <metrics complexity="4" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="8" coveredstatements="8" elements="9" coveredelements="9"/>
+      </class>
+      <line num="15" type="method" name="getCruNames" visibility="public" complexity="4" crap="4" count="5"/>
+      <line num="17" type="stmt" count="5"/>
+      <line num="18" type="stmt" count="5"/>
+      <line num="19" type="stmt" count="5"/>
+      <line num="21" type="stmt" count="5"/>
+      <line num="22" type="stmt" count="5"/>
+      <line num="24" type="stmt" count="5"/>
+      <line num="25" type="stmt" count="5"/>
+      <line num="28" type="stmt" count="5"/>
+      <metrics loc="30" ncloc="24" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="8" coveredstatements="8" elements="9" coveredelements="9"/>
+    </file>
+    <file name="/home/rsk/desarrollo/laravel-json-api/src/Documentor/Makers/SchemaMaker.php">
+      <class name="Reyesoft\JsonApi\Documentor\Makers\SchemaMaker" namespace="global">
+        <metrics complexity="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+      </class>
+      <metrics loc="15" ncloc="9" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+    </file>
+    <file name="/home/rsk/desarrollo/laravel-json-api/src/Documentor/RelationshipDocumentor.php">
+      <class name="Reyesoft\JsonApi\Documentor\RelationshipDocumentor" namespace="global">
+        <metrics complexity="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="2" elements="3" coveredelements="3"/>
+      </class>
+      <line num="19" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="6"/>
+      <line num="21" type="stmt" count="6"/>
+      <line num="22" type="stmt" count="6"/>
+      <metrics loc="24" ncloc="18" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="2" elements="3" coveredelements="3"/>
+    </file>
+    <file name="/home/rsk/desarrollo/laravel-json-api/src/Documentor/SchemaDocumentor.php">
+      <class name="Reyesoft\JsonApi\Documentor\SchemaDocumentor" namespace="global">
+        <metrics complexity="15" methods="9" coveredmethods="9" conditionals="0" coveredconditionals="0" statements="26" coveredstatements="26" elements="35" coveredelements="35"/>
+      </class>
+      <line num="36" type="method" name="__construct" visibility="public" complexity="3" crap="3" count="7"/>
+      <line num="38" type="stmt" count="7"/>
+      <line num="40" type="stmt" count="7"/>
+      <line num="41" type="stmt" count="7"/>
+      <line num="42" type="stmt" count="7"/>
+      <line num="43" type="stmt" count="7"/>
+      <line num="46" type="stmt" count="7"/>
+      <line num="47" type="stmt" count="7"/>
+      <line num="48" type="stmt" count="6"/>
+      <line num="52" type="method" name="loadFromArrays" visibility="private" complexity="3" crap="3" count="7"/>
+      <line num="54" type="stmt" count="7"/>
+      <line num="55" type="stmt" count="7"/>
+      <line num="58" type="stmt" count="7"/>
+      <line num="59" type="stmt" count="6"/>
+      <line num="66" type="method" name="mergeRules" visibility="private" complexity="3" crap="3" count="6"/>
+      <line num="68" type="stmt" count="6"/>
+      <line num="69" type="stmt" count="6"/>
+      <line num="70" type="stmt" count="5"/>
+      <line num="72" type="stmt" count="6"/>
+      <line num="73" type="stmt" count="6"/>
+      <line num="74" type="stmt" count="6"/>
+      <line num="76" type="stmt" count="6"/>
+      <line num="77" type="stmt" count="6"/>
+      <line num="81" type="method" name="getType" visibility="public" complexity="1" crap="1" count="5"/>
+      <line num="83" type="stmt" count="5"/>
+      <line num="89" type="method" name="getAttributes" visibility="public" complexity="1" crap="1" count="6"/>
+      <line num="91" type="stmt" count="6"/>
+      <line num="97" type="method" name="getRelationships" visibility="public" complexity="1" crap="1" count="5"/>
+      <line num="99" type="stmt" count="5"/>
+      <line num="102" type="method" name="addKeyValue" visibility="public" complexity="1" crap="1" count="2"/>
+      <line num="104" type="stmt" count="2"/>
+      <line num="107" type="method" name="getKeyValues" visibility="public" complexity="1" crap="1" count="6"/>
+      <line num="109" type="stmt" count="6"/>
+      <line num="112" type="method" name="getSchema" visibility="public" complexity="1" crap="1" count="5"/>
+      <line num="114" type="stmt" count="5"/>
+      <metrics loc="116" ncloc="91" classes="1" methods="9" coveredmethods="9" conditionals="0" coveredconditionals="0" statements="26" coveredstatements="26" elements="35" coveredelements="35"/>
+    </file>
+    <file name="/home/rsk/desarrollo/laravel-json-api/src/Documentor/Translators/MarkdownSchemaTranslator.php">
+      <class name="Reyesoft\JsonApi\Documentor\Translators\MarkdownSchemaTranslator" namespace="global">
+        <metrics complexity="3" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="12" coveredstatements="12" elements="14" coveredelements="14"/>
+      </class>
+      <line num="15" type="method" name="dump" visibility="public" complexity="1" crap="1" count="5"/>
+      <line num="17" type="stmt" count="5"/>
+      <line num="18" type="stmt" count="5"/>
+      <line num="19" type="stmt" count="5"/>
+      <line num="20" type="stmt" count="5"/>
+      <line num="21" type="stmt" count="5"/>
+      <line num="24" type="method" name="getMdFileContent" visibility="protected" complexity="2" crap="2" count="5"/>
+      <line num="26" type="stmt" count="5"/>
+      <line num="28" type="stmt" count="5"/>
+      <line num="30" type="stmt" count="5"/>
+      <line num="31" type="stmt" count="5"/>
+      <line num="32" type="stmt" count="3"/>
+      <line num="34" type="stmt" count="3"/>
+      <line num="37" type="stmt" count="2"/>
+      <metrics loc="39" ncloc="33" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="12" coveredstatements="12" elements="14" coveredelements="14"/>
+    </file>
+    <file name="/home/rsk/desarrollo/laravel-json-api/src/Documentor/Translators/SchemaTranslator.php">
+      <class name="Reyesoft\JsonApi\Documentor\Translators\SchemaTranslator" namespace="global">
+        <metrics complexity="20" methods="4" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="49" coveredstatements="41" elements="53" coveredelements="44"/>
+      </class>
+      <line num="21" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="5"/>
+      <line num="23" type="stmt" count="5"/>
+      <line num="26" type="method" name="getData" visibility="public" complexity="6" crap="6" count="5"/>
+      <line num="28" type="stmt" count="5"/>
+      <line num="29" type="stmt" count="5"/>
+      <line num="31" type="stmt" count="5"/>
+      <line num="32" type="stmt" count="1"/>
+      <line num="35" type="stmt" count="5"/>
+      <line num="36" type="stmt" count="5"/>
+      <line num="37" type="stmt" count="5"/>
+      <line num="38" type="stmt" count="5"/>
+      <line num="39" type="stmt" count="5"/>
+      <line num="41" type="stmt" count="5"/>
+      <line num="42" type="stmt" count="5"/>
+      <line num="43" type="stmt" count="3"/>
+      <line num="45" type="stmt" count="5"/>
+      <line num="46" type="stmt" count="4"/>
+      <line num="48" type="stmt" count="5"/>
+      <line num="49" type="stmt" count="5"/>
+      <line num="52" type="stmt" count="5"/>
+      <line num="53" type="stmt" count="5"/>
+      <line num="54" type="stmt" count="4"/>
+      <line num="55" type="stmt" count="4"/>
+      <line num="56" type="stmt" count="4"/>
+      <line num="57" type="stmt" count="4"/>
+      <line num="58" type="stmt" count="4"/>
+      <line num="61" type="stmt" count="5"/>
+      <line num="64" type="method" name="fillRules" visibility="protected" complexity="12" crap="18.06" count="5"/>
+      <line num="66" type="stmt" count="5"/>
+      <line num="67" type="stmt" count="5"/>
+      <line num="68" type="stmt" count="4"/>
+      <line num="70" type="stmt" count="1"/>
+      <line num="72" type="stmt" count="5"/>
+      <line num="73" type="stmt" count="0"/>
+      <line num="74" type="stmt" count="3"/>
+      <line num="76" type="stmt" count="3"/>
+      <line num="77" type="stmt" count="0"/>
+      <line num="78" type="stmt" count="0"/>
+      <line num="79" type="stmt" count="0"/>
+      <line num="80" type="stmt" count="0"/>
+      <line num="81" type="stmt" count="0"/>
+      <line num="82" type="stmt" count="1"/>
+      <line num="84" type="stmt" count="1"/>
+      <line num="85" type="stmt" count="0"/>
+      <line num="86" type="stmt" count="1"/>
+      <line num="87" type="stmt" count="1"/>
+      <line num="89" type="stmt" count="1"/>
+      <line num="90" type="stmt" count="0"/>
+      <line num="91" type="stmt" count="3"/>
+      <line num="93" type="stmt" count="1"/>
+      <line num="95" type="stmt" count="1"/>
+      <line num="102" type="method" name="dumpToFile" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="104" type="stmt" count="1"/>
+      <metrics loc="106" ncloc="99" classes="1" methods="4" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="49" coveredstatements="41" elements="53" coveredelements="44"/>
+    </file>
+    <file name="/home/rsk/desarrollo/laravel-json-api/src/Documentor/Translators/YamlSchemaTranslator.php">
+      <class name="Reyesoft\JsonApi\Documentor\Translators\YamlSchemaTranslator" namespace="global">
+        <metrics complexity="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="1" elements="2" coveredelements="2"/>
+      </class>
+      <line num="17" type="method" name="dump" visibility="public" complexity="1" crap="1" count="5"/>
+      <line num="19" type="stmt" count="5"/>
+      <metrics loc="21" ncloc="15" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="1" elements="2" coveredelements="2"/>
+    </file>
+    <file name="/home/rsk/desarrollo/laravel-json-api/src/Eloquent/EvaluatesRulesTrait.php">
+      <class name="Reyesoft\JsonApi\Eloquent\EvaluatesRulesTrait" namespace="global">
+        <metrics complexity="3" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="7" coveredstatements="7" elements="9" coveredelements="9"/>
+      </class>
+      <line num="18" type="method" name="bootEvaluatesRulesTrait" visibility="public" complexity="2" crap="2" count="54"/>
+      <line num="20" type="stmt" count="54"/>
+      <line num="22" type="stmt" count="54"/>
+      <line num="23" type="stmt" count="54"/>
+      <line num="24" type="stmt" count="23"/>
+      <line num="25" type="stmt" count="23"/>
+      <line num="32" type="stmt" count="54"/>
+      <line num="36" type="method" name="getRules" visibility="public" complexity="1" crap="1" count="6"/>
+      <line num="38" type="stmt" count="6"/>
+      <metrics loc="40" ncloc="32" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="7" coveredstatements="7" elements="9" coveredelements="9"/>
+    </file>
+    <file name="/home/rsk/desarrollo/laravel-json-api/src/Eloquent/Filters/BooleanFilter.php">
+      <class name="Reyesoft\JsonApi\Eloquent\Filters\BooleanFilter" namespace="global">
+        <metrics complexity="5" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="8" coveredstatements="8" elements="9" coveredelements="9"/>
+      </class>
+      <line num="18" type="method" name="filter" visibility="public" complexity="5" crap="5" count="1"/>
+      <line num="20" type="stmt" count="1"/>
+      <line num="21" type="stmt" count="1"/>
+      <line num="22" type="stmt" count="1"/>
+      <line num="23" type="stmt" count="1"/>
+      <line num="24" type="stmt" count="1"/>
+      <line num="28" type="stmt" count="1"/>
+      <line num="29" type="stmt" count="1"/>
+      <line num="33" type="stmt" count="1"/>
+      <metrics loc="35" ncloc="28" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="8" coveredstatements="8" elements="9" coveredelements="9"/>
+    </file>
+    <file name="/home/rsk/desarrollo/laravel-json-api/src/Eloquent/Filters/ConverterValues.php">
+      <class name="Reyesoft\JsonApi\Eloquent\Filters\ConverterValues" namespace="global">
+        <metrics complexity="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+      </class>
+      <metrics loc="17" ncloc="11" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+    </file>
+    <file name="/home/rsk/desarrollo/laravel-json-api/src/Eloquent/Filters/DateFilter.php">
+      <class name="Reyesoft\JsonApi\Eloquent\Filters\DateFilter" namespace="global">
+        <metrics complexity="4" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="6" elements="7" coveredelements="7"/>
+      </class>
+      <line num="25" type="method" name="valueCallback" visibility="protected" complexity="4" crap="4" count="5"/>
+      <line num="28" type="stmt" count="5"/>
+      <line num="30" type="stmt" count="4"/>
+      <line num="31" type="stmt" count="4"/>
+      <line num="34" type="stmt" count="4"/>
+      <line num="35" type="stmt" count="1"/>
+      <line num="36" type="stmt" count="1"/>
+      <metrics loc="39" ncloc="33" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="6" elements="7" coveredelements="7"/>
+    </file>
+    <file name="/home/rsk/desarrollo/laravel-json-api/src/Eloquent/Filters/EloquentFilter.php">
+      <class name="Reyesoft\JsonApi\Eloquent\Filters\EloquentFilter" namespace="global">
+        <metrics complexity="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="2" elements="3" coveredelements="3"/>
+      </class>
+      <line num="17" type="method" name="getName" visibility="public" complexity="1" crap="1" count="3"/>
+      <line num="19" type="stmt" count="3"/>
+      <line num="21" type="stmt" count="3"/>
+      <metrics loc="23" ncloc="17" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="2" elements="3" coveredelements="3"/>
+    </file>
+    <file name="/home/rsk/desarrollo/laravel-json-api/src/Eloquent/Filters/EloquentRangeFilter.php">
+      <class name="Reyesoft\JsonApi\Eloquent\Filters\EloquentRangeFilter" namespace="global">
+        <metrics complexity="11" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="15" coveredstatements="15" elements="18" coveredelements="18"/>
+      </class>
+      <line num="27" type="method" name="filter" visibility="public" complexity="4" crap="4" count="19"/>
+      <line num="29" type="stmt" count="19"/>
+      <line num="30" type="stmt" count="2"/>
+      <line num="31" type="stmt" count="19"/>
+      <line num="32" type="stmt" count="10"/>
+      <line num="33" type="stmt" count="12"/>
+      <line num="34" type="stmt" count="12"/>
+      <line num="42" type="method" name="applyConverterArray" visibility="protected" complexity="6" crap="6" count="19"/>
+      <line num="44" type="stmt" count="19"/>
+      <line num="45" type="stmt" count="19"/>
+      <line num="46" type="stmt" count="2"/>
+      <line num="49" type="stmt" count="18"/>
+      <line num="50" type="stmt" count="17"/>
+      <line num="51" type="stmt" count="2"/>
+      <line num="53" type="stmt" count="2"/>
+      <line num="55" type="stmt" count="16"/>
+      <line num="60" type="method" name="valueCallback" visibility="protected" complexity="1" crap="1" count="6"/>
+      <line num="62" type="stmt" count="6"/>
+      <metrics loc="64" ncloc="55" classes="1" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="15" coveredstatements="15" elements="18" coveredelements="18"/>
+    </file>
+    <file name="/home/rsk/desarrollo/laravel-json-api/src/Eloquent/Filters/EnumFilter.php">
+      <class name="Reyesoft\JsonApi\Eloquent\Filters\EnumFilter" namespace="global">
+        <metrics complexity="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+      </class>
+      <metrics loc="22" ncloc="16" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+    </file>
+    <file name="/home/rsk/desarrollo/laravel-json-api/src/Eloquent/Filters/LikeFilter.php">
+      <class name="Reyesoft\JsonApi\Eloquent\Filters\LikeFilter" namespace="global">
+        <metrics complexity="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+      </class>
+      <metrics loc="18" ncloc="9" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+    </file>
+    <file name="/home/rsk/desarrollo/laravel-json-api/src/Eloquent/Filters/NumberFilter.php">
+      <class name="Reyesoft\JsonApi\Eloquent\Filters\NumberFilter" namespace="global">
+        <metrics complexity="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+      </class>
+      <metrics loc="25" ncloc="19" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+    </file>
+    <file name="/home/rsk/desarrollo/laravel-json-api/src/Eloquent/Filters/StringFilter.php">
+      <class name="Reyesoft\JsonApi\Eloquent\Filters\StringFilter" namespace="global">
+        <metrics complexity="2" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="2" elements="3" coveredelements="3"/>
+      </class>
+      <line num="29" type="method" name="valueCallback" visibility="protected" complexity="2" crap="2" count="7"/>
+      <line num="31" type="stmt" count="7"/>
+      <line num="33" type="stmt" count="7"/>
+      <metrics loc="35" ncloc="29" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="2" elements="3" coveredelements="3"/>
+    </file>
+    <file name="/home/rsk/desarrollo/laravel-json-api/src/Eloquent/FinalSavedModelTrait.php">
+      <class name="Reyesoft\JsonApi\Eloquent\FinalSavedModelTrait" namespace="global">
+        <metrics complexity="9" methods="5" coveredmethods="5" conditionals="0" coveredconditionals="0" statements="23" coveredstatements="23" elements="28" coveredelements="28"/>
+      </class>
+      <line num="25" type="method" name="bootFinalSavedModelTrait" visibility="public" complexity="1" crap="1" count="54"/>
+      <line num="27" type="stmt" count="54"/>
+      <line num="28" type="stmt" count="54"/>
+      <line num="29" type="stmt" count="54"/>
+      <line num="30" type="stmt" count="54"/>
+      <line num="32" type="stmt" count="4"/>
+      <line num="33" type="stmt" count="54"/>
+      <line num="36" type="stmt" count="54"/>
+      <line num="37" type="stmt" count="54"/>
+      <line num="38" type="stmt" count="48"/>
+      <line num="48" type="stmt" count="54"/>
+      <line num="61" type="stmt" count="54"/>
+      <line num="62" type="stmt" count="54"/>
+      <line num="63" type="stmt" count="54"/>
+      <line num="64" type="stmt" count="24"/>
+      <line num="65" type="stmt" count="54"/>
+      <line num="72" type="method" name="register" visibility="public" complexity="1" crap="1" count="24"/>
+      <line num="74" type="stmt" count="24"/>
+      <line num="77" type="method" name="getPendingFireKey" visibility="private" complexity="1" crap="1" count="24"/>
+      <line num="79" type="stmt" count="24"/>
+      <line num="82" type="method" name="fireFinalSaved" visibility="public" complexity="1" crap="1" count="20"/>
+      <line num="84" type="stmt" count="20"/>
+      <line num="86" type="stmt" count="20"/>
+      <line num="89" type="method" name="fireAllFinalSaved" visibility="public" complexity="5" crap="5" count="48"/>
+      <line num="91" type="stmt" count="48"/>
+      <line num="92" type="stmt" count="48"/>
+      <line num="93" type="stmt" count="17"/>
+      <line num="94" type="stmt" count="17"/>
+      <metrics loc="103" ncloc="70" classes="1" methods="5" coveredmethods="5" conditionals="0" coveredconditionals="0" statements="23" coveredstatements="23" elements="28" coveredelements="28"/>
+    </file>
+    <file name="/home/rsk/desarrollo/laravel-json-api/src/Eloquent/ObjectsEloquentBuilder.php">
+      <class name="Reyesoft\JsonApi\Eloquent\ObjectsEloquentBuilder" namespace="global">
+        <metrics complexity="31" methods="11" coveredmethods="11" conditionals="0" coveredconditionals="0" statements="72" coveredstatements="72" elements="83" coveredelements="83"/>
+      </class>
+      <line num="45" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="44"/>
+      <line num="47" type="stmt" count="44"/>
+      <line num="48" type="stmt" count="44"/>
+      <line num="49" type="stmt" count="44"/>
+      <line num="52" type="method" name="getObjects" visibility="public" complexity="1" crap="1" count="22"/>
+      <line num="55" type="stmt" count="22"/>
+      <line num="57" type="stmt" count="22"/>
+      <line num="58" type="stmt" count="22"/>
+      <line num="61" type="method" name="getObject" visibility="public" complexity="1" crap="1" count="15"/>
+      <line num="63" type="stmt" count="15"/>
+      <line num="66" type="stmt" count="15"/>
+      <line num="68" type="stmt" count="15"/>
+      <line num="74" type="method" name="getTrashedObject" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="77" type="stmt" count="1"/>
+      <line num="78" type="stmt" count="1"/>
+      <line num="81" type="stmt" count="1"/>
+      <line num="84" type="method" name="getWithForEloquent" visibility="private" complexity="8" crap="8" count="22"/>
+      <line num="86" type="stmt" count="22"/>
+      <line num="87" type="stmt" count="22"/>
+      <line num="88" type="stmt" count="22"/>
+      <line num="89" type="stmt" count="22"/>
+      <line num="92" type="stmt" count="22"/>
+      <line num="93" type="stmt" count="11"/>
+      <line num="96" type="stmt" count="22"/>
+      <line num="97" type="stmt" count="11"/>
+      <line num="101" type="stmt" count="22"/>
+      <line num="102" type="stmt" count="22"/>
+      <line num="103" type="stmt" count="3"/>
+      <line num="106" type="stmt" count="22"/>
+      <line num="107" type="stmt" count="22"/>
+      <line num="108" type="stmt" count="22"/>
+      <line num="112" type="stmt" count="22"/>
+      <line num="120" type="method" name="getEloquentBuilder" visibility="public" complexity="2" crap="2" count="15"/>
+      <line num="122" type="stmt" count="15"/>
+      <line num="123" type="stmt" count="15"/>
+      <line num="126" type="stmt" count="15"/>
+      <line num="132" type="method" name="setEloquentBuilder" visibility="public" complexity="1" crap="1" count="30"/>
+      <line num="134" type="stmt" count="30"/>
+      <line num="135" type="stmt" count="30"/>
+      <line num="138" type="method" name="applyParametersToBuilder" visibility="private" complexity="9" crap="9" count="30"/>
+      <line num="141" type="stmt" count="30"/>
+      <line num="142" type="stmt" count="30"/>
+      <line num="143" type="stmt" count="25"/>
+      <line num="144" type="stmt" count="1"/>
+      <line num="147" type="stmt" count="24"/>
+      <line num="148" type="stmt" count="1"/>
+      <line num="150" type="stmt" count="23"/>
+      <line num="151" type="stmt" count="9"/>
+      <line num="152" type="stmt" count="9"/>
+      <line num="153" type="stmt" count="9"/>
+      <line num="154" type="stmt" count="8"/>
+      <line num="156" type="stmt" count="14"/>
+      <line num="157" type="stmt" count="14"/>
+      <line num="158" type="stmt" count="14"/>
+      <line num="160" type="stmt" count="22"/>
+      <line num="161" type="stmt" count="19"/>
+      <line num="163" type="stmt" count="19"/>
+      <line num="164" type="stmt" count="19"/>
+      <line num="165" type="stmt" count="8"/>
+      <line num="166" type="stmt" count="8"/>
+      <line num="167" type="stmt" count="8"/>
+      <line num="168" type="stmt" count="8"/>
+      <line num="169" type="stmt" count="8"/>
+      <line num="170" type="stmt" count="8"/>
+      <line num="171" type="stmt" count="8"/>
+      <line num="174" type="stmt" count="11"/>
+      <line num="179" type="stmt" count="23"/>
+      <line num="180" type="stmt" count="23"/>
+      <line num="181" type="stmt" count="4"/>
+      <line num="182" type="stmt" count="4"/>
+      <line num="187" type="stmt" count="23"/>
+      <line num="193" type="method" name="clearValue" visibility="private" complexity="3" crap="3" count="19"/>
+      <line num="201" type="stmt" count="19"/>
+      <line num="204" type="method" name="getRelationshipSchema" visibility="private" complexity="2" crap="2" count="9"/>
+      <line num="206" type="stmt" count="9"/>
+      <line num="207" type="stmt" count="9"/>
+      <line num="208" type="stmt" count="1"/>
+      <line num="211" type="stmt" count="8"/>
+      <line num="214" type="method" name="getFilterClass" visibility="private" complexity="2" crap="2" count="22"/>
+      <line num="216" type="stmt" count="22"/>
+      <line num="217" type="stmt" count="20"/>
+      <line num="218" type="stmt" count="1"/>
+      <line num="221" type="stmt" count="19"/>
+      <metrics loc="223" ncloc="183" classes="1" methods="11" coveredmethods="11" conditionals="0" coveredconditionals="0" statements="72" coveredstatements="72" elements="83" coveredelements="83"/>
+    </file>
+    <file name="/home/rsk/desarrollo/laravel-json-api/src/Eloquent/ObjectsEloquentFiller.php">
+      <class name="Reyesoft\JsonApi\Eloquent\ObjectsEloquentFiller" namespace="global">
+        <metrics complexity="58" methods="14" coveredmethods="14" conditionals="0" coveredconditionals="0" statements="122" coveredstatements="122" elements="136" coveredelements="136"/>
+      </class>
+      <line num="48" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="12"/>
+      <line num="50" type="stmt" count="12"/>
+      <line num="51" type="stmt" count="12"/>
+      <line num="54" type="method" name="fillAndSave" visibility="public" complexity="2" crap="2" count="12"/>
+      <line num="56" type="stmt" count="12"/>
+      <line num="58" type="stmt" count="12"/>
+      <line num="59" type="stmt" count="12"/>
+      <line num="62" type="stmt" count="12"/>
+      <line num="63" type="stmt" count="12"/>
+      <line num="66" type="stmt" count="12"/>
+      <line num="67" type="stmt" count="11"/>
+      <line num="69" type="stmt" count="11"/>
+      <line num="86" type="method" name="changePropertyNameAttribute" visibility="private" complexity="3" crap="3" count="12"/>
+      <line num="88" type="stmt" count="12"/>
+      <line num="89" type="stmt" count="12"/>
+      <line num="90" type="stmt" count="12"/>
+      <line num="91" type="stmt" count="12"/>
+      <line num="92" type="stmt" count="12"/>
+      <line num="94" type="stmt" count="1"/>
+      <line num="95" type="stmt" count="1"/>
+      <line num="98" type="stmt" count="12"/>
+      <line num="101" type="method" name="carbonizeAttributes" visibility="private" complexity="2" crap="2" count="12"/>
+      <line num="103" type="stmt" count="12"/>
+      <line num="104" type="stmt" count="12"/>
+      <line num="105" type="stmt" count="10"/>
+      <line num="108" type="stmt" count="12"/>
+      <line num="115" type="method" name="saveObjectOrFail" visibility="private" complexity="4" crap="4" count="14"/>
+      <line num="118" type="stmt" count="14"/>
+      <line num="119" type="stmt" count="13"/>
+      <line num="121" type="stmt" count="2"/>
+      <line num="122" type="stmt" count="1"/>
+      <line num="123" type="stmt" count="1"/>
+      <line num="125" type="stmt" count="1"/>
+      <line num="129" type="stmt" count="1"/>
+      <line num="132" type="method" name="fillAttributes" visibility="private" complexity="2" crap="2" count="12"/>
+      <line num="135" type="stmt" count="12"/>
+      <line num="136" type="stmt" count="12"/>
+      <line num="137" type="stmt" count="12"/>
+      <line num="138" type="stmt" count="12"/>
+      <line num="139" type="stmt" count="12"/>
+      <line num="143" type="method" name="fillRelationshipsOrFail" visibility="private" complexity="9" crap="9" count="12"/>
+      <line num="145" type="stmt" count="12"/>
+      <line num="147" type="stmt" count="12"/>
+      <line num="148" type="stmt" count="12"/>
+      <line num="149" type="stmt" count="7"/>
+      <line num="152" type="stmt" count="12"/>
+      <line num="153" type="stmt" count="12"/>
+      <line num="154" type="stmt" count="12"/>
+      <line num="157" type="stmt" count="11"/>
+      <line num="159" type="stmt" count="8"/>
+      <line num="162" type="stmt" count="11"/>
+      <line num="163" type="stmt" count="11"/>
+      <line num="165" type="stmt" count="7"/>
+      <line num="168" type="stmt" count="11"/>
+      <line num="169" type="stmt" count="11"/>
+      <line num="170" type="stmt" count="11"/>
+      <line num="174" type="method" name="fillRelationship" visibility="private" complexity="2" crap="2" count="11"/>
+      <line num="176" type="stmt" count="11"/>
+      <line num="177" type="stmt" count="10"/>
+      <line num="179" type="stmt" count="11"/>
+      <line num="183" type="method" name="fillRelationshipHasOne" visibility="private" complexity="11" crap="11" count="16"/>
+      <line num="185" type="stmt" count="16"/>
+      <line num="186" type="stmt" count="16"/>
+      <line num="187" type="stmt" count="16"/>
+      <line num="190" type="stmt" count="16"/>
+      <line num="193" type="stmt" count="16"/>
+      <line num="194" type="stmt" count="3"/>
+      <line num="195" type="stmt" count="2"/>
+      <line num="196" type="stmt" count="1"/>
+      <line num="197" type="stmt" count="1"/>
+      <line num="199" type="stmt" count="3"/>
+      <line num="201" type="stmt" count="14"/>
+      <line num="203" type="stmt" count="2"/>
+      <line num="204" type="stmt" count="1"/>
+      <line num="207" type="stmt" count="1"/>
+      <line num="208" type="stmt" count="12"/>
+      <line num="209" type="stmt" count="12"/>
+      <line num="210" type="stmt" count="1"/>
+      <line num="212" type="stmt" count="1"/>
+      <line num="213" type="stmt" count="1"/>
+      <line num="214" type="stmt" count="1"/>
+      <line num="219" type="stmt" count="1"/>
+      <line num="220" type="stmt" count="1"/>
+      <line num="221" type="stmt" count="11"/>
+      <line num="223" type="stmt" count="11"/>
+      <line num="239" type="method" name="fillRelationshipHasMany" visibility="private" complexity="4" crap="4" count="11"/>
+      <line num="241" type="stmt" count="11"/>
+      <line num="243" type="stmt" count="11"/>
+      <line num="244" type="stmt" count="11"/>
+      <line num="245" type="stmt" count="11"/>
+      <line num="246" type="stmt" count="11"/>
+      <line num="248" type="stmt" count="11"/>
+      <line num="249" type="stmt" count="1"/>
+      <line num="252" type="stmt" count="10"/>
+      <line num="260" type="method" name="sortRelationsBySchemaHasMany" visibility="private" complexity="2" crap="2" count="12"/>
+      <line num="262" type="stmt" count="12"/>
+      <line num="263" type="stmt" count="12"/>
+      <line num="264" type="stmt" count="12"/>
+      <line num="265" type="stmt" count="12"/>
+      <line num="266" type="stmt" count="12"/>
+      <line num="273" type="method" name="syncAllRelated" visibility="private" complexity="11" crap="11" count="10"/>
+      <line num="275" type="stmt" count="10"/>
+      <line num="276" type="stmt" count="7"/>
+      <line num="277" type="stmt" count="7"/>
+      <line num="278" type="stmt" count="6"/>
+      <line num="279" type="stmt" count="6"/>
+      <line num="280" type="stmt" count="6"/>
+      <line num="285" type="stmt" count="6"/>
+      <line num="290" type="stmt" count="7"/>
+      <line num="291" type="stmt" count="7"/>
+      <line num="292" type="stmt" count="7"/>
+      <line num="293" type="stmt" count="9"/>
+      <line num="294" type="stmt" count="9"/>
+      <line num="295" type="stmt" count="8"/>
+      <line num="296" type="stmt" count="8"/>
+      <line num="297" type="stmt" count="8"/>
+      <line num="298" type="stmt" count="8"/>
+      <line num="299" type="stmt" count="8"/>
+      <line num="300" type="stmt" count="8"/>
+      <line num="301" type="stmt" count="8"/>
+      <line num="303" type="stmt" count="8"/>
+      <line num="304" type="stmt" count="8"/>
+      <line num="305" type="stmt" count="1"/>
+      <line num="307" type="stmt" count="8"/>
+      <line num="308" type="stmt" count="1"/>
+      <line num="311" type="stmt" count="8"/>
+      <line num="312" type="stmt" count="9"/>
+      <line num="320" type="method" name="removeAllRelated" visibility="private" complexity="2" crap="2" count="11"/>
+      <line num="322" type="stmt" count="11"/>
+      <line num="323" type="stmt" count="8"/>
+      <line num="325" type="stmt" count="5"/>
+      <line num="329" type="method" name="getIdsFromDataCollectionOrFail" visibility="private" complexity="1" crap="1" count="11"/>
+      <line num="331" type="stmt" count="11"/>
+      <line num="332" type="stmt" count="11"/>
+      <line num="333" type="stmt" count="11"/>
+      <line num="334" type="stmt" count="11"/>
+      <metrics loc="338" ncloc="289" classes="1" methods="14" coveredmethods="14" conditionals="0" coveredconditionals="0" statements="122" coveredstatements="122" elements="136" coveredelements="136"/>
+    </file>
+    <file name="/home/rsk/desarrollo/laravel-json-api/src/Exceptions/ActionResourcePolicyException.php">
+      <class name="Reyesoft\JsonApi\Exceptions\ActionResourcePolicyException" namespace="global">
+        <metrics complexity="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="5" coveredstatements="5" elements="6" coveredelements="6"/>
+      </class>
+      <line num="18" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="20" type="stmt" count="1"/>
+      <line num="21" type="stmt" count="1"/>
+      <line num="22" type="stmt" count="1"/>
+      <line num="23" type="stmt" count="1"/>
+      <line num="25" type="stmt" count="1"/>
+      <metrics loc="30" ncloc="24" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="5" coveredstatements="5" elements="6" coveredelements="6"/>
+    </file>
+    <file name="/home/rsk/desarrollo/laravel-json-api/src/Exceptions/BaseException.php">
+      <class name="Reyesoft\JsonApi\Exceptions\BaseException" namespace="global">
+        <metrics complexity="5" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="8" coveredstatements="8" elements="11" coveredelements="11"/>
+      </class>
+      <line num="26" type="method" name="__construct" visibility="public" complexity="3" crap="3" count="26"/>
+      <line num="28" type="stmt" count="26"/>
+      <line num="29" type="stmt" count="26"/>
+      <line num="30" type="stmt" count="3"/>
+      <line num="31" type="stmt" count="23"/>
+      <line num="32" type="stmt" count="21"/>
+      <line num="36" type="method" name="getMessageFromError" visibility="private" complexity="1" crap="1" count="24"/>
+      <line num="38" type="stmt" count="24"/>
+      <line num="41" type="method" name="createInstance" visibility="protected" complexity="1" crap="1" count="1"/>
+      <line num="51" type="stmt" count="1"/>
+      <line num="53" type="stmt" count="1"/>
+      <metrics loc="55" ncloc="49" classes="1" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="8" coveredstatements="8" elements="11" coveredelements="11"/>
+    </file>
+    <file name="/home/rsk/desarrollo/laravel-json-api/src/Exceptions/DataValidationException.php">
+      <class name="Reyesoft\JsonApi\Exceptions\DataValidationException" namespace="global">
+        <metrics complexity="3" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="14" coveredstatements="14" elements="15" coveredelements="15"/>
+      </class>
+      <line num="28" type="method" name="fromErrorArray" visibility="public" complexity="2" crap="2" count="1"/>
+      <line num="33" type="stmt" count="1"/>
+      <line num="34" type="stmt" count="1"/>
+      <line num="35" type="stmt" count="1"/>
+      <line num="36" type="stmt" count="1"/>
+      <line num="37" type="stmt" count="1"/>
+      <line num="38" type="stmt" count="1"/>
+      <line num="39" type="stmt" count="1"/>
+      <line num="40" type="stmt" count="1"/>
+      <line num="41" type="stmt" count="1"/>
+      <line num="42" type="stmt" count="1"/>
+      <line num="43" type="stmt" count="1"/>
+      <line num="45" type="stmt" count="1"/>
+      <line num="46" type="stmt" count="1"/>
+      <line num="52" type="stmt" count="1"/>
+      <metrics loc="54" ncloc="44" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="14" coveredstatements="14" elements="15" coveredelements="15"/>
+    </file>
+    <file name="/home/rsk/desarrollo/laravel-json-api/src/Exceptions/ErrorMutatorException.php">
+      <class name="Reyesoft\JsonApi\Exceptions\ErrorMutatorException" namespace="global">
+        <metrics complexity="2" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="11" coveredstatements="10" elements="12" coveredelements="10"/>
+      </class>
+      <line num="18" type="method" name="mutate" visibility="public" complexity="2" crap="2.00" count="2"/>
+      <line num="20" type="stmt" count="2"/>
+      <line num="21" type="stmt" count="2"/>
+      <line num="22" type="stmt" count="2"/>
+      <line num="23" type="stmt" count="2"/>
+      <line num="24" type="stmt" count="2"/>
+      <line num="25" type="stmt" count="2"/>
+      <line num="26" type="stmt" count="2"/>
+      <line num="27" type="stmt" count="2"/>
+      <line num="28" type="stmt" count="2"/>
+      <line num="31" type="stmt" count="2"/>
+      <line num="35" type="stmt" count="0"/>
+      <metrics loc="37" ncloc="30" classes="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="11" coveredstatements="10" elements="12" coveredelements="10"/>
+    </file>
+    <file name="/home/rsk/desarrollo/laravel-json-api/src/Exceptions/Handler.php">
+      <class name="Reyesoft\JsonApi\Exceptions\Handler" namespace="global">
+        <metrics complexity="15" methods="5" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="27" coveredstatements="19" elements="32" coveredelements="21"/>
+      </class>
+      <line num="39" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="58"/>
+      <line num="41" type="stmt" count="58"/>
+      <line num="42" type="stmt" count="58"/>
+      <line num="45" type="method" name="shouldReport" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="47" type="stmt" count="0"/>
+      <line num="53" type="method" name="report" visibility="public" complexity="2" crap="2" count="26"/>
+      <line num="55" type="stmt" count="26"/>
+      <line num="58" type="method" name="render" visibility="public" complexity="5" crap="5.93" count="27"/>
+      <line num="60" type="stmt" count="27"/>
+      <line num="61" type="stmt" count="26"/>
+      <line num="64" type="stmt" count="1"/>
+      <line num="65" type="stmt" count="1"/>
+      <line num="66" type="stmt" count="0"/>
+      <line num="67" type="stmt" count="0"/>
+      <line num="71" type="stmt" count="27"/>
+      <line num="72" type="stmt" count="0"/>
+      <line num="75" type="stmt" count="27"/>
+      <line num="87" type="method" name="createResponse" visibility="protected" complexity="4" crap="4.37" count="26"/>
+      <line num="90" type="stmt" count="26"/>
+      <line num="91" type="stmt" count="26"/>
+      <line num="92" type="stmt" count="26"/>
+      <line num="93" type="stmt" count="26"/>
+      <line num="94" type="stmt" count="26"/>
+      <line num="95" type="stmt" count="0"/>
+      <line num="97" type="stmt" count="0"/>
+      <line num="98" type="stmt" count="26"/>
+      <line num="99" type="stmt" count="26"/>
+      <line num="101" type="stmt" count="26"/>
+      <line num="103" type="stmt" count="0"/>
+      <line num="105" type="stmt" count="0"/>
+      <line num="109" type="stmt" count="26"/>
+      <line num="111" type="stmt" count="26"/>
+      <metrics loc="113" ncloc="88" classes="1" methods="5" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="27" coveredstatements="19" elements="32" coveredelements="21"/>
+    </file>
+    <file name="/home/rsk/desarrollo/laravel-json-api/src/Exceptions/RelatedAliasNotFoundException.php">
+      <class name="Reyesoft\JsonApi\Exceptions\RelatedAliasNotFoundException" namespace="global">
+        <metrics complexity="2" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="5" coveredstatements="5" elements="7" coveredelements="7"/>
+      </class>
+      <line num="20" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="22" type="stmt" count="1"/>
+      <line num="23" type="stmt" count="1"/>
+      <line num="24" type="stmt" count="1"/>
+      <line num="28" type="method" name="createQueryError" visibility="private" complexity="1" crap="1" count="1"/>
+      <line num="30" type="stmt" count="1"/>
+      <line num="32" type="stmt" count="1"/>
+      <metrics loc="34" ncloc="25" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="5" coveredstatements="5" elements="7" coveredelements="7"/>
+    </file>
+    <file name="/home/rsk/desarrollo/laravel-json-api/src/Exceptions/ResourcePolicyException.php">
+      <class name="Reyesoft\JsonApi\Exceptions\ResourcePolicyException" namespace="global">
+        <metrics complexity="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="9" coveredstatements="9" elements="10" coveredelements="10"/>
+      </class>
+      <line num="18" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="20" type="stmt" count="1"/>
+      <line num="21" type="stmt" count="1"/>
+      <line num="22" type="stmt" count="1"/>
+      <line num="23" type="stmt" count="1"/>
+      <line num="24" type="stmt" count="1"/>
+      <line num="25" type="stmt" count="1"/>
+      <line num="26" type="stmt" count="1"/>
+      <line num="27" type="stmt" count="1"/>
+      <line num="30" type="stmt" count="1"/>
+      <metrics loc="33" ncloc="27" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="9" coveredstatements="9" elements="10" coveredelements="10"/>
+    </file>
+    <file name="/home/rsk/desarrollo/laravel-json-api/src/Exceptions/ResourceTypeNotFoundException.php">
+      <class name="Reyesoft\JsonApi\Exceptions\ResourceTypeNotFoundException" namespace="global">
+        <metrics complexity="2" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="5" coveredstatements="5" elements="7" coveredelements="7"/>
+      </class>
+      <line num="20" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="2"/>
+      <line num="22" type="stmt" count="2"/>
+      <line num="23" type="stmt" count="2"/>
+      <line num="24" type="stmt" count="2"/>
+      <line num="28" type="method" name="createQueryError" visibility="private" complexity="1" crap="1" count="2"/>
+      <line num="30" type="stmt" count="2"/>
+      <line num="32" type="stmt" count="2"/>
+      <metrics loc="34" ncloc="25" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="5" coveredstatements="5" elements="7" coveredelements="7"/>
+    </file>
+    <file name="/home/rsk/desarrollo/laravel-json-api/src/Exceptions/WrongAttributeDataReceivedException.php">
+      <class name="Reyesoft\JsonApi\Exceptions\WrongAttributeDataReceivedException" namespace="global">
+        <metrics complexity="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="4" elements="5" coveredelements="5"/>
+      </class>
+      <line num="15" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="17" type="stmt" count="1"/>
+      <line num="18" type="stmt" count="1"/>
+      <line num="22" type="stmt" count="1"/>
+      <line num="23" type="stmt" count="1"/>
+      <metrics loc="27" ncloc="21" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="4" elements="5" coveredelements="5"/>
+    </file>
+    <file name="/home/rsk/desarrollo/laravel-json-api/src/Exceptions/WrongDataReceivedException.php">
+      <class name="Reyesoft\JsonApi\Exceptions\WrongDataReceivedException" namespace="global">
+        <metrics complexity="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="9" coveredstatements="9" elements="10" coveredelements="10"/>
+      </class>
+      <line num="19" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="12"/>
+      <line num="21" type="stmt" count="12"/>
+      <line num="22" type="stmt" count="12"/>
+      <line num="23" type="stmt" count="12"/>
+      <line num="24" type="stmt" count="12"/>
+      <line num="25" type="stmt" count="12"/>
+      <line num="26" type="stmt" count="12"/>
+      <line num="27" type="stmt" count="12"/>
+      <line num="28" type="stmt" count="12"/>
+      <line num="32" type="stmt" count="12"/>
+      <metrics loc="35" ncloc="28" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="9" coveredstatements="9" elements="10" coveredelements="10"/>
+    </file>
+    <file name="/home/rsk/desarrollo/laravel-json-api/src/Exceptions/WrongParametersReceivedException.php">
+      <class name="Reyesoft\JsonApi\Exceptions\WrongParametersReceivedException" namespace="global">
+        <metrics complexity="2" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="4" elements="6" coveredelements="6"/>
+      </class>
+      <line num="17" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="9"/>
+      <line num="19" type="stmt" count="9"/>
+      <line num="20" type="stmt" count="9"/>
+      <line num="21" type="stmt" count="9"/>
+      <line num="25" type="method" name="createQueryError" visibility="private" complexity="1" crap="1" count="9"/>
+      <line num="27" type="stmt" count="9"/>
+      <metrics loc="29" ncloc="23" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="4" elements="6" coveredelements="6"/>
+    </file>
+    <file name="/home/rsk/desarrollo/laravel-json-api/src/Facades/JsonApi.php">
+      <class name="Reyesoft\JsonApi\Facades\JsonApi" namespace="global">
+        <metrics complexity="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="1" elements="2" coveredelements="2"/>
+      </class>
+      <line num="30" type="method" name="getFacadeAccessor" visibility="protected" complexity="1" crap="1" count="49"/>
+      <line num="32" type="stmt" count="49"/>
+      <metrics loc="34" ncloc="20" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="1" elements="2" coveredelements="2"/>
+    </file>
+    <file name="/home/rsk/desarrollo/laravel-json-api/src/Http/AppResponses.php">
+      <class name="Reyesoft\JsonApi\Http\AppResponses" namespace="global">
+        <metrics complexity="11" methods="6" coveredmethods="6" conditionals="0" coveredconditionals="0" statements="22" coveredstatements="22" elements="28" coveredelements="28"/>
+      </class>
+      <line num="32" type="method" name="instance" visibility="public" complexity="3" crap="3" count="59"/>
+      <line num="37" type="stmt" count="59"/>
+      <line num="38" type="stmt" count="59"/>
+      <line num="40" type="stmt" count="59"/>
+      <line num="42" type="stmt" count="59"/>
+      <line num="43" type="stmt" count="59"/>
+      <line num="44" type="stmt" count="59"/>
+      <line num="47" type="stmt" count="15"/>
+      <line num="49" type="stmt" count="59"/>
+      <line num="50" type="stmt" count="59"/>
+      <line num="51" type="stmt" count="59"/>
+      <line num="52" type="stmt" count="1"/>
+      <line num="54" type="stmt" count="59"/>
+      <line num="56" type="stmt" count="59"/>
+      <line num="57" type="stmt" count="59"/>
+      <line num="62" type="stmt" count="59"/>
+      <line num="65" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="58"/>
+      <line num="70" type="stmt" count="58"/>
+      <line num="71" type="stmt" count="58"/>
+      <line num="72" type="stmt" count="58"/>
+      <line num="88" type="method" name="setSchemesContainer" visibility="public" complexity="1" crap="1" count="58"/>
+      <line num="90" type="stmt" count="58"/>
+      <line num="93" type="method" name="createResponse" visibility="protected" complexity="1" crap="1" count="58"/>
+      <line num="95" type="stmt" count="58"/>
+      <line num="98" type="method" name="getEncoder" visibility="protected" complexity="1" crap="1" count="58"/>
+      <line num="100" type="stmt" count="58"/>
+      <line num="103" type="method" name="getMediaType" visibility="protected" complexity="1" crap="1" count="58"/>
+      <line num="105" type="stmt" count="58"/>
+      <metrics loc="107" ncloc="92" classes="1" methods="6" coveredmethods="6" conditionals="0" coveredconditionals="0" statements="22" coveredstatements="22" elements="28" coveredelements="28"/>
+    </file>
+    <file name="/home/rsk/desarrollo/laravel-json-api/src/Http/Controllers/JsonApiGlobalController.php">
+      <class name="Reyesoft\JsonApi\Http\Controllers\JsonApiGlobalController" namespace="global">
+        <metrics complexity="6" methods="6" coveredmethods="6" conditionals="0" coveredconditionals="0" statements="18" coveredstatements="18" elements="24" coveredelements="24"/>
+      </class>
+      <line num="36" type="method" name="getCollection" visibility="public" complexity="1" crap="1" count="33"/>
+      <line num="38" type="stmt" count="33"/>
+      <line num="39" type="stmt" count="33"/>
+      <line num="41" type="stmt" count="33"/>
+      <line num="44" type="method" name="getRelatedCollection" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="46" type="stmt" count="1"/>
+      <line num="47" type="stmt" count="1"/>
+      <line num="49" type="stmt" count="1"/>
+      <line num="52" type="method" name="get" visibility="public" complexity="1" crap="1" count="16"/>
+      <line num="54" type="stmt" count="16"/>
+      <line num="55" type="stmt" count="16"/>
+      <line num="57" type="stmt" count="16"/>
+      <line num="60" type="method" name="create" visibility="public" complexity="1" crap="1" count="17"/>
+      <line num="62" type="stmt" count="17"/>
+      <line num="63" type="stmt" count="17"/>
+      <line num="65" type="stmt" count="17"/>
+      <line num="68" type="method" name="update" visibility="public" complexity="1" crap="1" count="3"/>
+      <line num="70" type="stmt" count="3"/>
+      <line num="71" type="stmt" count="3"/>
+      <line num="73" type="stmt" count="3"/>
+      <line num="76" type="method" name="delete" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="78" type="stmt" count="1"/>
+      <line num="79" type="stmt" count="1"/>
+      <line num="81" type="stmt" count="1"/>
+      <metrics loc="83" ncloc="68" classes="1" methods="6" coveredmethods="6" conditionals="0" coveredconditionals="0" statements="18" coveredstatements="18" elements="24" coveredelements="24"/>
+    </file>
+    <file name="/home/rsk/desarrollo/laravel-json-api/src/Http/JsonApiParameters.php">
+      <class name="Reyesoft\JsonApi\Http\JsonApiParameters" namespace="global">
+        <metrics complexity="11" methods="7" coveredmethods="7" conditionals="0" coveredconditionals="0" statements="23" coveredstatements="23" elements="30" coveredelements="30"/>
+      </class>
+      <line num="48" type="method" name="__construct" visibility="public" complexity="3" crap="3" count="60"/>
+      <line num="50" type="stmt" count="60"/>
+      <line num="51" type="stmt" count="60"/>
+      <line num="55" type="stmt" count="59"/>
+      <line num="56" type="stmt" count="7"/>
+      <line num="60" type="stmt" count="58"/>
+      <line num="63" type="stmt" count="57"/>
+      <line num="66" type="stmt" count="57"/>
+      <line num="67" type="stmt" count="57"/>
+      <line num="68" type="stmt" count="15"/>
+      <line num="73" type="stmt" count="57"/>
+      <line num="74" type="stmt" count="57"/>
+      <line num="75" type="stmt" count="57"/>
+      <line num="76" type="stmt" count="57"/>
+      <line num="77" type="stmt" count="57"/>
+      <line num="80" type="method" name="validatePageSize" visibility="public" complexity="3" crap="3" count="58"/>
+      <line num="82" type="stmt" count="58"/>
+      <line num="83" type="stmt" count="1"/>
+      <line num="84" type="stmt" count="1"/>
+      <line num="85" type="stmt" count="1"/>
+      <line num="99" type="method" name="getIncludePaths" visibility="public" complexity="1" crap="1" count="57"/>
+      <line num="101" type="stmt" count="57"/>
+      <line num="104" type="method" name="getFilteringParameters" visibility="public" complexity="1" crap="1" count="30"/>
+      <line num="106" type="stmt" count="30"/>
+      <line num="109" type="method" name="getSortParameters" visibility="public" complexity="1" crap="1" count="57"/>
+      <line num="111" type="stmt" count="57"/>
+      <line num="114" type="method" name="getPageSize" visibility="public" complexity="1" crap="1" count="23"/>
+      <line num="116" type="stmt" count="23"/>
+      <line num="119" type="method" name="getPageNumber" visibility="public" complexity="1" crap="1" count="23"/>
+      <line num="121" type="stmt" count="23"/>
+      <metrics loc="123" ncloc="83" classes="1" methods="7" coveredmethods="7" conditionals="0" coveredconditionals="0" statements="23" coveredstatements="23" elements="30" coveredelements="30"/>
+    </file>
+    <file name="/home/rsk/desarrollo/laravel-json-api/src/Http/JsonApiParametersValidator.php">
+      <class name="Reyesoft\JsonApi\Http\JsonApiParametersValidator" namespace="global">
+        <metrics complexity="13" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="31" coveredstatements="31" elements="34" coveredelements="34"/>
+      </class>
+      <line num="22" type="method" name="checkValidValuesOrFail" visibility="public" complexity="2" crap="2" count="55"/>
+      <line num="24" type="stmt" count="55"/>
+      <line num="26" type="stmt" count="55"/>
+      <line num="27" type="stmt" count="55"/>
+      <line num="29" type="stmt" count="55"/>
+      <line num="30" type="stmt" count="3"/>
+      <line num="34" type="method" name="checkValidSortValues" visibility="private" complexity="6" crap="6" count="55"/>
+      <line num="36" type="stmt" count="55"/>
+      <line num="37" type="stmt" count="55"/>
+      <line num="38" type="stmt" count="7"/>
+      <line num="39" type="stmt" count="2"/>
+      <line num="41" type="stmt" count="5"/>
+      <line num="42" type="stmt" count="1"/>
+      <line num="43" type="stmt" count="1"/>
+      <line num="44" type="stmt" count="1"/>
+      <line num="46" type="stmt" count="4"/>
+      <line num="47" type="stmt" count="1"/>
+      <line num="48" type="stmt" count="1"/>
+      <line num="49" type="stmt" count="1"/>
+      <line num="55" type="method" name="checkValidIncludes" visibility="private" complexity="5" crap="5" count="55"/>
+      <line num="57" type="stmt" count="55"/>
+      <line num="59" type="stmt" count="55"/>
+      <line num="60" type="stmt" count="15"/>
+      <line num="61" type="stmt" count="14"/>
+      <line num="64" type="stmt" count="2"/>
+      <line num="65" type="stmt" count="2"/>
+      <line num="67" type="stmt" count="2"/>
+      <line num="68" type="stmt" count="2"/>
+      <line num="69" type="stmt" count="2"/>
+      <line num="70" type="stmt" count="2"/>
+      <line num="71" type="stmt" count="1"/>
+      <line num="75" type="stmt" count="1"/>
+      <line num="76" type="stmt" count="1"/>
+      <line num="77" type="stmt" count="1"/>
+      <metrics loc="81" ncloc="73" classes="1" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="31" coveredstatements="31" elements="34" coveredelements="34"/>
+    </file>
+    <file name="/home/rsk/desarrollo/laravel-json-api/src/Http/JsonApiResponse.php">
+      <class name="Reyesoft\JsonApi\Http\JsonApiResponse" namespace="global">
+        <metrics complexity="3" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="7" coveredstatements="7" elements="9" coveredelements="9"/>
+      </class>
+      <line num="24" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="58"/>
+      <line num="26" type="stmt" count="58"/>
+      <line num="28" type="stmt" count="58"/>
+      <line num="31" type="method" name="createBody" visibility="protected" complexity="2" crap="2" count="58"/>
+      <line num="33" type="stmt" count="58"/>
+      <line num="35" type="stmt" count="58"/>
+      <line num="36" type="stmt" count="58"/>
+      <line num="37" type="stmt" count="58"/>
+      <line num="40" type="stmt" count="58"/>
+      <metrics loc="42" ncloc="36" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="7" coveredstatements="7" elements="9" coveredelements="9"/>
+    </file>
+    <file name="/home/rsk/desarrollo/laravel-json-api/src/Http/Middleware/JsonApiMiddleware.php">
+      <class name="Reyesoft\JsonApi\Http\Middleware\JsonApiMiddleware" namespace="global">
+        <metrics complexity="6" methods="4" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="23" coveredstatements="23" elements="27" coveredelements="27"/>
+      </class>
+      <line num="22" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="58"/>
+      <line num="24" type="stmt" count="58"/>
+      <line num="25" type="stmt" count="58"/>
+      <line num="26" type="stmt" count="58"/>
+      <line num="27" type="stmt" count="26"/>
+      <line num="28" type="stmt" count="58"/>
+      <line num="35" type="method" name="handle" visibility="public" complexity="1" crap="1" count="58"/>
+      <line num="37" type="stmt" count="58"/>
+      <line num="38" type="stmt" count="58"/>
+      <line num="39" type="stmt" count="58"/>
+      <line num="41" type="stmt" count="58"/>
+      <line num="51" type="method" name="registerRequestDataContent" visibility="private" complexity="1" crap="1" count="58"/>
+      <line num="53" type="stmt" count="58"/>
+      <line num="54" type="stmt" count="58"/>
+      <line num="55" type="stmt" count="58"/>
+      <line num="56" type="stmt" count="58"/>
+      <line num="57" type="stmt" count="58"/>
+      <line num="58" type="stmt" count="58"/>
+      <line num="62" type="method" name="registerJsonApiExceptionHandler" visibility="private" complexity="2" crap="2" count="58"/>
+      <line num="64" type="stmt" count="58"/>
+      <line num="65" type="stmt" count="58"/>
+      <line num="66" type="stmt" count="58"/>
+      <line num="68" type="stmt" count="58"/>
+      <line num="69" type="stmt" count="58"/>
+      <line num="70" type="stmt" count="58"/>
+      <line num="71" type="stmt" count="58"/>
+      <line num="72" type="stmt" count="58"/>
+      <metrics loc="75" ncloc="63" classes="1" methods="4" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="23" coveredstatements="23" elements="27" coveredelements="27"/>
+    </file>
+    <file name="/home/rsk/desarrollo/laravel-json-api/src/Makers/AttributeMaker.php">
+      <class name="Reyesoft\JsonApi\Makers\AttributeMaker" namespace="global">
+        <metrics complexity="13" methods="12" coveredmethods="12" conditionals="0" coveredconditionals="0" statements="26" coveredstatements="26" elements="38" coveredelements="38"/>
+      </class>
+      <line num="20" type="method" name="__construct" visibility="public" complexity="2" crap="2" count="67"/>
+      <line num="22" type="stmt" count="67"/>
+      <line num="23" type="stmt" count="67"/>
+      <line num="25" type="stmt" count="67"/>
+      <line num="26" type="stmt" count="50"/>
+      <line num="27" type="stmt" count="50"/>
+      <line num="28" type="stmt" count="50"/>
+      <line num="29" type="stmt" count="50"/>
+      <line num="30" type="stmt" count="50"/>
+      <line num="31" type="stmt" count="50"/>
+      <line num="35" type="method" name="getMember" visibility="public" complexity="1" crap="1" count="56"/>
+      <line num="37" type="stmt" count="56"/>
+      <line num="47" type="method" name="getFilter" visibility="public" complexity="1" crap="1" count="20"/>
+      <line num="49" type="stmt" count="20"/>
+      <line num="52" type="method" name="setFilter" visibility="public" complexity="1" crap="1" count="65"/>
+      <line num="54" type="stmt" count="65"/>
+      <line num="56" type="stmt" count="65"/>
+      <line num="62" type="method" name="sortable" visibility="public" complexity="1" crap="1" count="65"/>
+      <line num="64" type="stmt" count="65"/>
+      <line num="67" type="method" name="getSortable" visibility="public" complexity="1" crap="1" count="5"/>
+      <line num="69" type="stmt" count="5"/>
+      <line num="72" type="method" name="setSortable" visibility="public" complexity="1" crap="1" count="65"/>
+      <line num="74" type="stmt" count="65"/>
+      <line num="76" type="stmt" count="65"/>
+      <line num="79" type="method" name="setPropertyName" visibility="public" complexity="1" crap="1" count="55"/>
+      <line num="81" type="stmt" count="55"/>
+      <line num="83" type="stmt" count="55"/>
+      <line num="89" type="method" name="setMethodName" visibility="public" complexity="1" crap="1" count="55"/>
+      <line num="91" type="stmt" count="55"/>
+      <line num="93" type="stmt" count="55"/>
+      <line num="96" type="method" name="setHidden" visibility="public" complexity="1" crap="1" count="54"/>
+      <line num="98" type="stmt" count="54"/>
+      <line num="100" type="stmt" count="54"/>
+      <line num="103" type="method" name="getRules" visibility="public" complexity="1" crap="1" count="7"/>
+      <line num="105" type="stmt" count="7"/>
+      <line num="108" type="method" name="setRules" visibility="public" complexity="1" crap="1" count="56"/>
+      <line num="110" type="stmt" count="56"/>
+      <line num="112" type="stmt" count="56"/>
+      <metrics loc="114" ncloc="96" classes="1" methods="12" coveredmethods="12" conditionals="0" coveredconditionals="0" statements="26" coveredstatements="26" elements="38" coveredelements="38"/>
+    </file>
+    <file name="/home/rsk/desarrollo/laravel-json-api/src/Makers/HasCruTrait.php">
+      <class name="Reyesoft\JsonApi\Makers\HasCruTrait" namespace="global">
+        <metrics complexity="3" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="3" elements="5" coveredelements="5"/>
+      </class>
+      <line num="19" type="method" name="hasCru" visibility="public" complexity="2" crap="2" count="5"/>
+      <line num="21" type="stmt" count="5"/>
+      <line num="24" type="method" name="setCru" visibility="public" complexity="1" crap="1" count="66"/>
+      <line num="26" type="stmt" count="66"/>
+      <line num="28" type="stmt" count="66"/>
+      <metrics loc="30" ncloc="20" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="3" elements="5" coveredelements="5"/>
+    </file>
+    <file name="/home/rsk/desarrollo/laravel-json-api/src/Makers/RelationshipMaker.php">
+      <class name="Reyesoft\JsonApi\Makers\RelationshipMaker" namespace="global">
+        <metrics complexity="10" methods="8" coveredmethods="8" conditionals="0" coveredconditionals="0" statements="20" coveredstatements="20" elements="28" coveredelements="28"/>
+      </class>
+      <line num="19" type="method" name="__construct" visibility="public" complexity="3" crap="3" count="57"/>
+      <line num="21" type="stmt" count="57"/>
+      <line num="22" type="stmt" count="57"/>
+      <line num="23" type="stmt" count="57"/>
+      <line num="26" type="stmt" count="57"/>
+      <line num="27" type="stmt" count="57"/>
+      <line num="28" type="stmt" count="57"/>
+      <line num="29" type="stmt" count="57"/>
+      <line num="30" type="stmt" count="57"/>
+      <line num="34" type="method" name="setRelationship" visibility="public" complexity="1" crap="1" count="6"/>
+      <line num="36" type="stmt" count="6"/>
+      <line num="39" type="method" name="getMember" visibility="public" complexity="1" crap="1" count="57"/>
+      <line num="41" type="stmt" count="57"/>
+      <line num="44" type="method" name="includeData" visibility="public" complexity="1" crap="1" count="33"/>
+      <line num="46" type="stmt" count="33"/>
+      <line num="48" type="stmt" count="33"/>
+      <line num="51" type="method" name="includeLinks" visibility="public" complexity="1" crap="1" count="33"/>
+      <line num="53" type="stmt" count="33"/>
+      <line num="55" type="stmt" count="33"/>
+      <line num="58" type="method" name="setHasMany" visibility="public" complexity="1" crap="1" count="57"/>
+      <line num="60" type="stmt" count="57"/>
+      <line num="62" type="stmt" count="57"/>
+      <line num="65" type="method" name="setMethodName" visibility="public" complexity="1" crap="1" count="57"/>
+      <line num="67" type="stmt" count="57"/>
+      <line num="69" type="stmt" count="57"/>
+      <line num="72" type="method" name="setSchema" visibility="public" complexity="1" crap="1" count="57"/>
+      <line num="74" type="stmt" count="57"/>
+      <line num="76" type="stmt" count="57"/>
+      <metrics loc="78" ncloc="72" classes="1" methods="8" coveredmethods="8" conditionals="0" coveredconditionals="0" statements="20" coveredstatements="20" elements="28" coveredelements="28"/>
+    </file>
+    <file name="/home/rsk/desarrollo/laravel-json-api/src/Makers/SchemaMaker.php">
+      <class name="Reyesoft\JsonApi\Makers\SchemaMaker" namespace="global">
+        <metrics complexity="9" methods="4" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="17" coveredstatements="17" elements="21" coveredelements="21"/>
+      </class>
+      <line num="25" type="method" name="__construct" visibility="public" complexity="2" crap="2" count="67"/>
+      <line num="27" type="stmt" count="67"/>
+      <line num="28" type="stmt" count="67"/>
+      <line num="29" type="stmt" count="51"/>
+      <line num="31" type="stmt" count="67"/>
+      <line num="34" type="method" name="addAttribute" visibility="public" complexity="3" crap="3" count="59"/>
+      <line num="36" type="stmt" count="59"/>
+      <line num="37" type="stmt" count="59"/>
+      <line num="40" type="stmt" count="59"/>
+      <line num="41" type="stmt" count="59"/>
+      <line num="44" type="stmt" count="59"/>
+      <line num="47" type="method" name="getAttributeOrFail" visibility="public" complexity="2" crap="2" count="17"/>
+      <line num="49" type="stmt" count="17"/>
+      <line num="50" type="stmt" count="2"/>
+      <line num="53" type="stmt" count="15"/>
+      <line num="75" type="method" name="addRelationship" visibility="public" complexity="2" crap="2" count="57"/>
+      <line num="77" type="stmt" count="57"/>
+      <line num="78" type="stmt" count="57"/>
+      <line num="81" type="stmt" count="57"/>
+      <line num="82" type="stmt" count="57"/>
+      <line num="84" type="stmt" count="57"/>
+      <metrics loc="86" ncloc="60" classes="1" methods="4" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="17" coveredstatements="17" elements="21" coveredelements="21"/>
+    </file>
+    <file name="/home/rsk/desarrollo/laravel-json-api/src/Policy.php">
+      <class name="Reyesoft\JsonApi\Policy" namespace="global">
+        <metrics complexity="16" methods="16" coveredmethods="15" conditionals="0" coveredconditionals="0" statements="17" coveredstatements="16" elements="33" coveredelements="31"/>
+      </class>
+      <line num="18" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="46"/>
+      <line num="20" type="stmt" count="46"/>
+      <line num="21" type="stmt" count="46"/>
+      <line num="24" type="method" name="isMainResource" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="26" type="stmt" count="0"/>
+      <line num="29" type="method" name="before" visibility="public" complexity="1" crap="1" count="46"/>
+      <line num="31" type="stmt" count="46"/>
+      <line num="34" type="method" name="beforeAll" visibility="public" complexity="1" crap="1" count="28"/>
+      <line num="36" type="stmt" count="28"/>
+      <line num="39" type="method" name="beforeGet" visibility="public" complexity="1" crap="1" count="14"/>
+      <line num="41" type="stmt" count="14"/>
+      <line num="44" type="method" name="beforeRelated" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="46" type="stmt" count="1"/>
+      <line num="49" type="method" name="beforeCreate" visibility="public" complexity="1" crap="1" count="11"/>
+      <line num="51" type="stmt" count="11"/>
+      <line num="54" type="method" name="beforeUpdate" visibility="public" complexity="1" crap="1" count="5"/>
+      <line num="56" type="stmt" count="5"/>
+      <line num="59" type="method" name="beforeDelete" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="61" type="stmt" count="1"/>
+      <line num="64" type="method" name="model" visibility="public" complexity="1" crap="1" count="37"/>
+      <line num="66" type="stmt" count="37"/>
+      <line num="69" type="method" name="modelAll" visibility="public" complexity="1" crap="1" count="20"/>
+      <line num="71" type="stmt" count="20"/>
+      <line num="74" type="method" name="modelGet" visibility="public" complexity="1" crap="1" count="15"/>
+      <line num="76" type="stmt" count="15"/>
+      <line num="79" type="method" name="modelRelated" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="81" type="stmt" count="1"/>
+      <line num="84" type="method" name="modelCreate" visibility="public" complexity="1" crap="1" count="9"/>
+      <line num="86" type="stmt" count="9"/>
+      <line num="89" type="method" name="modelUpdate" visibility="public" complexity="1" crap="1" count="4"/>
+      <line num="91" type="stmt" count="4"/>
+      <line num="94" type="method" name="modelDelete" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="96" type="stmt" count="1"/>
+      <metrics loc="98" ncloc="92" classes="1" methods="16" coveredmethods="15" conditionals="0" coveredconditionals="0" statements="17" coveredstatements="16" elements="33" coveredelements="31"/>
+    </file>
+    <file name="/home/rsk/desarrollo/laravel-json-api/src/Requests/AllRequest.php">
+      <class name="Reyesoft\JsonApi\Requests\AllRequest" namespace="global">
+        <metrics complexity="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+      </class>
+      <metrics loc="15" ncloc="9" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+    </file>
+    <file name="/home/rsk/desarrollo/laravel-json-api/src/Requests/CreateRequest.php">
+      <class name="Reyesoft\JsonApi\Requests\CreateRequest" namespace="global">
+        <metrics complexity="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+      </class>
+      <metrics loc="15" ncloc="9" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+    </file>
+    <file name="/home/rsk/desarrollo/laravel-json-api/src/Requests/DeleteRequest.php">
+      <class name="Reyesoft\JsonApi\Requests\DeleteRequest" namespace="global">
+        <metrics complexity="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+      </class>
+      <metrics loc="15" ncloc="9" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+    </file>
+    <file name="/home/rsk/desarrollo/laravel-json-api/src/Requests/GetRequest.php">
+      <class name="Reyesoft\JsonApi\Requests\GetRequest" namespace="global">
+        <metrics complexity="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+      </class>
+      <metrics loc="15" ncloc="9" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+    </file>
+    <file name="/home/rsk/desarrollo/laravel-json-api/src/Requests/JsonApiRequest.php">
+      <class name="Reyesoft\JsonApi\Requests\JsonApiRequest" namespace="global">
+        <metrics complexity="17" methods="11" coveredmethods="9" conditionals="0" coveredconditionals="0" statements="30" coveredstatements="28" elements="41" coveredelements="37"/>
+      </class>
+      <line num="40" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="58"/>
+      <line num="42" type="stmt" count="58"/>
+      <line num="43" type="stmt" count="58"/>
+      <line num="45" type="stmt" count="58"/>
+      <line num="46" type="stmt" count="58"/>
+      <line num="49" type="method" name="setSchemas" visibility="protected" complexity="2" crap="2" count="58"/>
+      <line num="51" type="stmt" count="58"/>
+      <line num="52" type="stmt" count="1"/>
+      <line num="55" type="stmt" count="57"/>
+      <line num="56" type="stmt" count="57"/>
+      <line num="59" type="method" name="getAvailableSchemas" visibility="public" complexity="1" crap="1" count="20"/>
+      <line num="61" type="stmt" count="20"/>
+      <line num="67" type="method" name="getAction" visibility="public" complexity="2" crap="2" count="51"/>
+      <line num="69" type="stmt" count="51"/>
+      <line num="75" type="stmt" count="51"/>
+      <line num="76" type="stmt" count="51"/>
+      <line num="77" type="stmt" count="51"/>
+      <line num="78" type="stmt" count="51"/>
+      <line num="79" type="stmt" count="51"/>
+      <line num="80" type="stmt" count="51"/>
+      <line num="86" type="method" name="getSchema" visibility="public" complexity="1" crap="1" count="58"/>
+      <line num="88" type="stmt" count="58"/>
+      <line num="91" type="method" name="getParameters" visibility="public" complexity="2" crap="2" count="58"/>
+      <line num="93" type="stmt" count="58"/>
+      <line num="94" type="stmt" count="58"/>
+      <line num="95" type="stmt" count="55"/>
+      <line num="98" type="stmt" count="52"/>
+      <line num="101" type="method" name="getRequest" visibility="public" complexity="1" crap="1" count="37"/>
+      <line num="103" type="stmt" count="37"/>
+      <line num="106" type="method" name="getEncoder" visibility="public" complexity="2" crap="2" count="37"/>
+      <line num="108" type="stmt" count="37"/>
+      <line num="109" type="stmt" count="37"/>
+      <line num="112" type="stmt" count="37"/>
+      <line num="115" type="method" name="getData" visibility="public" complexity="3" crap="3" count="58"/>
+      <line num="117" type="stmt" count="58"/>
+      <line num="119" type="stmt" count="58"/>
+      <line num="128" type="stmt" count="58"/>
+      <line num="131" type="method" name="getDataIncluded" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="133" type="stmt" count="0"/>
+      <line num="136" type="method" name="hasIncludedData" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="138" type="stmt" count="0"/>
+      <metrics loc="140" ncloc="122" classes="1" methods="11" coveredmethods="9" conditionals="0" coveredconditionals="0" statements="30" coveredstatements="28" elements="41" coveredelements="37"/>
+    </file>
+    <file name="/home/rsk/desarrollo/laravel-json-api/src/Requests/NoResourceRequest.php">
+      <class name="Reyesoft\JsonApi\Requests\NoResourceRequest" namespace="global">
+        <metrics complexity="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="1" elements="2" coveredelements="2"/>
+      </class>
+      <line num="15" type="method" name="readParams" visibility="protected" complexity="1" crap="1" count="50"/>
+      <line num="17" type="stmt" count="50"/>
+      <metrics loc="19" ncloc="13" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="1" elements="2" coveredelements="2"/>
+    </file>
+    <file name="/home/rsk/desarrollo/laravel-json-api/src/Requests/RelatedRequest.php">
+      <class name="Reyesoft\JsonApi\Requests\RelatedRequest" namespace="global">
+        <metrics complexity="10" methods="8" coveredmethods="7" conditionals="0" coveredconditionals="0" statements="22" coveredstatements="21" elements="30" coveredelements="28"/>
+      </class>
+      <line num="27" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="29" type="stmt" count="1"/>
+      <line num="31" type="stmt" count="1"/>
+      <line num="34" type="method" name="readParams" visibility="protected" complexity="1" crap="1" count="1"/>
+      <line num="36" type="stmt" count="1"/>
+      <line num="39" type="method" name="setSchemas" visibility="protected" complexity="3" crap="3.00" count="2"/>
+      <line num="41" type="stmt" count="2"/>
+      <line num="42" type="stmt" count="0"/>
+      <line num="45" type="stmt" count="2"/>
+      <line num="47" type="stmt" count="2"/>
+      <line num="48" type="stmt" count="2"/>
+      <line num="49" type="stmt" count="2"/>
+      <line num="50" type="stmt" count="2"/>
+      <line num="51" type="stmt" count="1"/>
+      <line num="53" type="stmt" count="1"/>
+      <line num="56" type="stmt" count="1"/>
+      <line num="57" type="stmt" count="1"/>
+      <line num="58" type="stmt" count="1"/>
+      <line num="60" type="stmt" count="1"/>
+      <line num="61" type="stmt" count="1"/>
+      <line num="64" type="method" name="getParentSchemaClass" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="66" type="stmt" count="1"/>
+      <line num="69" type="method" name="getParentType" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="71" type="stmt" count="1"/>
+      <line num="74" type="method" name="getParentId" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="76" type="stmt" count="1"/>
+      <line num="79" type="method" name="getResourceAlias" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="81" type="stmt" count="1"/>
+      <line num="84" type="method" name="getResourceMethodName" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="86" type="stmt" count="1"/>
+      <metrics loc="88" ncloc="80" classes="1" methods="8" coveredmethods="7" conditionals="0" coveredconditionals="0" statements="22" coveredstatements="21" elements="30" coveredelements="28"/>
+    </file>
+    <file name="/home/rsk/desarrollo/laravel-json-api/src/Requests/ResourceRequest.php">
+      <class name="Reyesoft\JsonApi\Requests\ResourceRequest" namespace="global">
+        <metrics complexity="3" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="9" coveredstatements="9" elements="12" coveredelements="12"/>
+      </class>
+      <line num="19" type="method" name="readParams" visibility="protected" complexity="1" crap="1" count="16"/>
+      <line num="21" type="stmt" count="16"/>
+      <line num="24" type="method" name="getId" visibility="public" complexity="1" crap="1" count="16"/>
+      <line num="26" type="stmt" count="16"/>
+      <line num="32" type="method" name="getAction" visibility="public" complexity="1" crap="1" count="16"/>
+      <line num="34" type="stmt" count="16"/>
+      <line num="36" type="stmt" count="16"/>
+      <line num="37" type="stmt" count="16"/>
+      <line num="38" type="stmt" count="16"/>
+      <line num="39" type="stmt" count="16"/>
+      <line num="40" type="stmt" count="16"/>
+      <line num="41" type="stmt" count="16"/>
+      <metrics loc="44" ncloc="35" classes="1" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="9" coveredstatements="9" elements="12" coveredelements="12"/>
+    </file>
+    <file name="/home/rsk/desarrollo/laravel-json-api/src/Requests/UpdateRequest.php">
+      <class name="Reyesoft\JsonApi\Requests\UpdateRequest" namespace="global">
+        <metrics complexity="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+      </class>
+      <metrics loc="15" ncloc="9" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+    </file>
+    <file name="/home/rsk/desarrollo/laravel-json-api/src/ServiceProvider.php">
+      <class name="Reyesoft\JsonApi\ServiceProvider" namespace="global">
+        <metrics complexity="2" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+      </class>
+      <metrics loc="52" ncloc="41" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+    </file>
+    <file name="/home/rsk/desarrollo/laravel-json-api/src/Services/ArrayDataService.php">
+      <class name="Reyesoft\JsonApi\Services\ArrayDataService" namespace="global">
+        <metrics complexity="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+      </class>
+      <metrics loc="15" ncloc="9" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+    </file>
+    <file name="/home/rsk/desarrollo/laravel-json-api/src/Services/DataService.php">
+      <class name="Reyesoft\JsonApi\Services\DataService" namespace="global">
+        <metrics complexity="5" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="3" elements="5" coveredelements="5"/>
+      </class>
+      <line num="31" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="46"/>
+      <line num="33" type="stmt" count="46"/>
+      <line num="34" type="stmt" count="46"/>
+      <line num="37" type="method" name="getMeta" visibility="public" complexity="1" crap="1" count="37"/>
+      <line num="39" type="stmt" count="37"/>
+      <metrics loc="61" ncloc="43" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="3" elements="5" coveredelements="5"/>
+    </file>
+    <file name="/home/rsk/desarrollo/laravel-json-api/src/Services/EloquentDataService.php">
+      <class name="Reyesoft\JsonApi\Services\EloquentDataService" namespace="global">
+        <metrics complexity="34" methods="16" coveredmethods="14" conditionals="0" coveredconditionals="0" statements="96" coveredstatements="94" elements="112" coveredelements="108"/>
+      </class>
+      <line num="32" type="method" name="all" visibility="public" complexity="1" crap="1" count="28"/>
+      <line num="34" type="stmt" count="28"/>
+      <line num="36" type="stmt" count="28"/>
+      <line num="39" type="method" name="related" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="42" type="stmt" count="1"/>
+      <line num="43" type="stmt" count="1"/>
+      <line num="46" type="stmt" count="1"/>
+      <line num="47" type="stmt" count="1"/>
+      <line num="48" type="stmt" count="1"/>
+      <line num="50" type="stmt" count="1"/>
+      <line num="53" type="method" name="getItemsFromEloquentBuilder" visibility="private" complexity="1" crap="1" count="29"/>
+      <line num="55" type="stmt" count="29"/>
+      <line num="56" type="stmt" count="29"/>
+      <line num="57" type="stmt" count="22"/>
+      <line num="58" type="stmt" count="22"/>
+      <line num="60" type="stmt" count="22"/>
+      <line num="61" type="stmt" count="22"/>
+      <line num="63" type="stmt" count="22"/>
+      <line num="66" type="method" name="getObjectBuilder" visibility="private" complexity="1" crap="1" count="44"/>
+      <line num="68" type="stmt" count="44"/>
+      <line num="69" type="stmt" count="44"/>
+      <line num="70" type="stmt" count="44"/>
+      <line num="71" type="stmt" count="44"/>
+      <line num="75" type="method" name="setMetaPage" visibility="protected" complexity="2" crap="2" count="22"/>
+      <line num="77" type="stmt" count="22"/>
+      <line num="78" type="stmt" count="22"/>
+      <line num="79" type="stmt" count="22"/>
+      <line num="80" type="stmt" count="22"/>
+      <line num="81" type="stmt" count="22"/>
+      <line num="84" type="method" name="getRelatedData" visibility="public" complexity="8" crap="8.02" count="39"/>
+      <line num="86" type="stmt" count="39"/>
+      <line num="87" type="stmt" count="39"/>
+      <line num="88" type="stmt" count="39"/>
+      <line num="92" type="stmt" count="35"/>
+      <line num="93" type="stmt" count="35"/>
+      <line num="94" type="stmt" count="15"/>
+      <line num="97" type="stmt" count="26"/>
+      <line num="99" type="stmt" count="26"/>
+      <line num="100" type="stmt" count="20"/>
+      <line num="101" type="stmt" count="20"/>
+      <line num="103" type="stmt" count="20"/>
+      <line num="106" type="stmt" count="8"/>
+      <line num="109" type="stmt" count="8"/>
+      <line num="110" type="stmt" count="0"/>
+      <line num="113" type="stmt" count="8"/>
+      <line num="116" type="method" name="getModelFieldId" visibility="private" complexity="5" crap="5.03" count="35"/>
+      <line num="118" type="stmt" count="35"/>
+      <line num="119" type="stmt" count="35"/>
+      <line num="128" type="stmt" count="29"/>
+      <line num="132" type="stmt" count="29"/>
+      <line num="133" type="stmt" count="15"/>
+      <line num="136" type="stmt" count="20"/>
+      <line num="138" type="stmt" count="8"/>
+      <line num="139" type="stmt" count="8"/>
+      <line num="142" type="stmt" count="0"/>
+      <line num="145" type="method" name="get" visibility="public" complexity="1" crap="1" count="15"/>
+      <line num="147" type="stmt" count="15"/>
+      <line num="148" type="stmt" count="15"/>
+      <line num="149" type="stmt" count="15"/>
+      <line num="151" type="stmt" count="15"/>
+      <line num="154" type="method" name="create" visibility="public" complexity="1" crap="1" count="10"/>
+      <line num="156" type="stmt" count="10"/>
+      <line num="157" type="stmt" count="10"/>
+      <line num="158" type="stmt" count="10"/>
+      <line num="159" type="stmt" count="10"/>
+      <line num="160" type="stmt" count="10"/>
+      <line num="162" type="stmt" count="8"/>
+      <line num="165" type="method" name="update" visibility="public" complexity="4" crap="4" count="6"/>
+      <line num="167" type="stmt" count="6"/>
+      <line num="168" type="stmt" count="6"/>
+      <line num="170" type="stmt" count="6"/>
+      <line num="171" type="stmt" count="6"/>
+      <line num="173" type="stmt" count="1"/>
+      <line num="175" type="stmt" count="5"/>
+      <line num="176" type="stmt" count="5"/>
+      <line num="179" type="stmt" count="6"/>
+      <line num="181" type="stmt" count="6"/>
+      <line num="183" type="stmt" count="1"/>
+      <line num="184" type="stmt" count="1"/>
+      <line num="185" type="stmt" count="1"/>
+      <line num="187" type="stmt" count="5"/>
+      <line num="188" type="stmt" count="5"/>
+      <line num="191" type="stmt" count="6"/>
+      <line num="194" type="method" name="delete" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="196" type="stmt" count="1"/>
+      <line num="197" type="stmt" count="1"/>
+      <line num="198" type="stmt" count="1"/>
+      <line num="199" type="stmt" count="1"/>
+      <line num="200" type="stmt" count="1"/>
+      <line num="201" type="stmt" count="1"/>
+      <line num="203" type="stmt" count="1"/>
+      <line num="206" type="method" name="fillAndSaveObject" visibility="private" complexity="1" crap="1" count="11"/>
+      <line num="208" type="stmt" count="11"/>
+      <line num="210" type="stmt" count="11"/>
+      <line num="213" type="method" name="checkRulesOrFail" visibility="private" complexity="4" crap="4" count="12"/>
+      <line num="215" type="stmt" count="12"/>
+      <line num="216" type="stmt" count="12"/>
+      <line num="217" type="stmt" count="12"/>
+      <line num="218" type="stmt" count="10"/>
+      <line num="221" type="stmt" count="10"/>
+      <line num="225" type="stmt" count="12"/>
+      <line num="226" type="stmt" count="12"/>
+      <line num="229" type="stmt" count="12"/>
+      <line num="230" type="stmt" count="1"/>
+      <line num="231" type="stmt" count="1"/>
+      <line num="234" type="stmt" count="11"/>
+      <line num="237" type="method" name="openTransaction" visibility="public" complexity="1" crap="1" count="11"/>
+      <line num="239" type="stmt" count="11"/>
+      <line num="242" type="method" name="closeTransaction" visibility="public" complexity="1" crap="1" count="8"/>
+      <line num="244" type="stmt" count="8"/>
+      <line num="247" type="method" name="rollbackTransaction" visibility="public" complexity="1" crap="1" count="3"/>
+      <line num="249" type="stmt" count="3"/>
+      <metrics loc="251" ncloc="224" classes="1" methods="16" coveredmethods="14" conditionals="0" coveredconditionals="0" statements="96" coveredstatements="94" elements="112" coveredelements="108"/>
+    </file>
+    <file name="/home/rsk/desarrollo/laravel-json-api/src/Tests/JsonApiResource.php">
+      <class name="Reyesoft\JsonApi\Tests\JsonApiResource" namespace="global">
+        <metrics complexity="6" methods="5" coveredmethods="5" conditionals="0" coveredconditionals="0" statements="10" coveredstatements="10" elements="15" coveredelements="15"/>
+      </class>
+      <line num="20" type="method" name="getArray" visibility="public" complexity="2" crap="2" count="5"/>
+      <line num="24" type="stmt" count="5"/>
+      <line num="25" type="stmt" count="5"/>
+      <line num="26" type="stmt" count="5"/>
+      <line num="29" type="stmt" count="5"/>
+      <line num="30" type="stmt" count="1"/>
+      <line num="33" type="stmt" count="5"/>
+      <line num="36" type="method" name="setId" visibility="public" complexity="1" crap="1" count="5"/>
+      <line num="38" type="stmt" count="5"/>
+      <line num="41" type="method" name="setType" visibility="public" complexity="1" crap="1" count="5"/>
+      <line num="43" type="stmt" count="5"/>
+      <line num="46" type="method" name="setAttributes" visibility="public" complexity="1" crap="1" count="5"/>
+      <line num="48" type="stmt" count="5"/>
+      <line num="51" type="method" name="setRelationships" visibility="public" complexity="1" crap="1" count="5"/>
+      <line num="53" type="stmt" count="5"/>
+      <metrics loc="55" ncloc="49" classes="1" methods="5" coveredmethods="5" conditionals="0" coveredconditionals="0" statements="10" coveredstatements="10" elements="15" coveredelements="15"/>
+    </file>
+    <file name="/home/rsk/desarrollo/laravel-json-api/src/Tests/JsonApiResourceBuilder.php">
+      <class name="Reyesoft\JsonApi\Tests\JsonApiResourceBuilder" namespace="global">
+        <metrics complexity="28" methods="11" coveredmethods="6" conditionals="0" coveredconditionals="0" statements="53" coveredstatements="41" elements="64" coveredelements="47"/>
+      </class>
+      <line num="24" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="5"/>
+      <line num="26" type="stmt" count="5"/>
+      <line num="28" type="stmt" count="5"/>
+      <line num="31" type="method" name="newResource" visibility="public" complexity="5" crap="5.58" count="5"/>
+      <line num="33" type="stmt" count="5"/>
+      <line num="34" type="stmt" count="0"/>
+      <line num="36" type="stmt" count="5"/>
+      <line num="37" type="stmt" count="1"/>
+      <line num="39" type="stmt" count="4"/>
+      <line num="40" type="stmt" count="4"/>
+      <line num="43" type="stmt" count="0"/>
+      <line num="46" type="method" name="buildResourceFromModel" visibility="private" complexity="1" crap="2" count="0"/>
+      <line num="48" type="stmt" count="0"/>
+      <line num="50" type="stmt" count="0"/>
+      <line num="53" type="method" name="buildResourceFromId" visibility="private" complexity="1" crap="1" count="1"/>
+      <line num="55" type="stmt" count="1"/>
+      <line num="56" type="stmt" count="1"/>
+      <line num="58" type="stmt" count="1"/>
+      <line num="61" type="method" name="buildResourceFromFactory" visibility="private" complexity="1" crap="1" count="4"/>
+      <line num="63" type="stmt" count="4"/>
+      <line num="65" type="stmt" count="4"/>
+      <line num="68" type="method" name="buildResourceFromObject" visibility="private" complexity="1" crap="1" count="5"/>
+      <line num="70" type="stmt" count="5"/>
+      <line num="72" type="stmt" count="5"/>
+      <line num="73" type="stmt" count="5"/>
+      <line num="74" type="stmt" count="5"/>
+      <line num="75" type="stmt" count="5"/>
+      <line num="77" type="stmt" count="5"/>
+      <line num="80" type="method" name="buildAttributes" visibility="private" complexity="4" crap="4" count="5"/>
+      <line num="92" type="stmt" count="5"/>
+      <line num="93" type="stmt" count="5"/>
+      <line num="94" type="stmt" count="5"/>
+      <line num="95" type="stmt" count="5"/>
+      <line num="98" type="stmt" count="5"/>
+      <line num="101" type="method" name="buildRelationships" visibility="private" complexity="7" crap="7.32" count="5"/>
+      <line num="103" type="stmt" count="5"/>
+      <line num="104" type="stmt" count="5"/>
+      <line num="105" type="stmt" count="3"/>
+      <line num="106" type="stmt" count="3"/>
+      <line num="107" type="stmt" count="2"/>
+      <line num="108" type="stmt" count="2"/>
+      <line num="111" type="stmt" count="3"/>
+      <line num="112" type="stmt" count="0"/>
+      <line num="115" type="stmt" count="3"/>
+      <line num="116" type="stmt" count="3"/>
+      <line num="117" type="stmt" count="2"/>
+      <line num="118" type="stmt" count="1"/>
+      <line num="119" type="stmt" count="1"/>
+      <line num="120" type="stmt" count="0"/>
+      <line num="121" type="stmt" count="0"/>
+      <line num="130" type="stmt" count="5"/>
+      <line num="133" type="method" name="model2relationshipData" visibility="private" complexity="1" crap="1" count="1"/>
+      <line num="142" type="stmt" count="1"/>
+      <line num="143" type="stmt" count="1"/>
+      <line num="147" type="method" name="collection2relationshipData" visibility="private" complexity="2" crap="2.06" count="2"/>
+      <line num="149" type="stmt" count="2"/>
+      <line num="150" type="stmt" count="2"/>
+      <line num="151" type="stmt" count="0"/>
+      <line num="154" type="stmt" count="2"/>
+      <line num="157" type="method" name="fixCarbonDatesW3c" visibility="private" complexity="4" crap="20" count="0"/>
+      <line num="164" type="stmt" count="0"/>
+      <line num="167" type="stmt" count="0"/>
+      <line num="168" type="stmt" count="0"/>
+      <line num="169" type="stmt" count="0"/>
+      <metrics loc="173" ncloc="142" classes="1" methods="11" coveredmethods="6" conditionals="0" coveredconditionals="0" statements="53" coveredstatements="41" elements="64" coveredelements="47"/>
+    </file>
+    <file name="/home/rsk/desarrollo/laravel-json-api/src/Tests/TestJsonApiAssertionsTrait.php">
+      <class name="Reyesoft\JsonApi\Tests\TestJsonApiAssertionsTrait" namespace="global">
+        <metrics complexity="12" methods="6" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="27" coveredstatements="22" elements="33" coveredelements="26"/>
+      </class>
+      <line num="19" type="method" name="assertResponseJsonApiError" visibility="public" complexity="2" crap="2.00" count="26"/>
+      <line num="21" type="stmt" count="26"/>
+      <line num="22" type="stmt" count="0"/>
+      <line num="24" type="stmt" count="26"/>
+      <line num="25" type="stmt" count="26"/>
+      <line num="26" type="stmt" count="26"/>
+      <line num="27" type="stmt" count="26"/>
+      <line num="28" type="stmt" count="26"/>
+      <line num="29" type="stmt" count="26"/>
+      <line num="33" type="stmt" count="26"/>
+      <line num="36" type="stmt" count="26"/>
+      <line num="42" type="stmt" count="26"/>
+      <line num="45" type="method" name="assertResponseJsonApiCollection" visibility="public" complexity="1" crap="1" count="11"/>
+      <line num="47" type="stmt" count="11"/>
+      <line num="48" type="stmt" count="11"/>
+      <line num="52" type="stmt" count="11"/>
+      <line num="61" type="method" name="assertResponseJsonApiResource" visibility="public" complexity="1" crap="1" count="3"/>
+      <line num="63" type="stmt" count="3"/>
+      <line num="64" type="stmt" count="3"/>
+      <line num="67" type="method" name="assertResponseJsonApiCreated" visibility="public" complexity="1" crap="1" count="5"/>
+      <line num="69" type="stmt" count="5"/>
+      <line num="70" type="stmt" count="5"/>
+      <line num="73" type="method" name="assertResponseJsonApiResourceStructure" visibility="private" complexity="1" crap="1" count="8"/>
+      <line num="75" type="stmt" count="8"/>
+      <line num="78" type="stmt" count="8"/>
+      <line num="119" type="method" name="assertResponseStatus" visibility="public" complexity="2" crap="2.75" count="20"/>
+      <line num="121" type="stmt" count="20"/>
+      <line num="123" type="stmt" count="20"/>
+      <line num="124" type="stmt" count="0"/>
+      <line num="125" type="stmt" count="0"/>
+      <line num="126" type="stmt" count="0"/>
+      <line num="127" type="stmt" count="0"/>
+      <line num="131" type="stmt" count="20"/>
+      <metrics loc="133" ncloc="116" classes="1" methods="6" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="27" coveredstatements="22" elements="33" coveredelements="26"/>
+    </file>
+    <file name="/home/rsk/desarrollo/laravel-json-api/src/Tests/TestJsonApiCallsTrait.php">
+      <class name="Reyesoft\JsonApi\Tests\TestJsonApiCallsTrait" namespace="global">
+        <metrics complexity="4" methods="4" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="20" coveredstatements="15" elements="24" coveredelements="18"/>
+      </class>
+      <line num="25" type="method" name="callGet" visibility="protected" complexity="1" crap="1" count="50"/>
+      <line num="27" type="stmt" count="50"/>
+      <line num="28" type="stmt" count="50"/>
+      <line num="30" type="stmt" count="50"/>
+      <line num="33" type="stmt" count="50"/>
+      <line num="35" type="stmt" count="50"/>
+      <line num="38" type="method" name="callDelete" visibility="protected" complexity="1" crap="2" count="0"/>
+      <line num="40" type="stmt" count="0"/>
+      <line num="41" type="stmt" count="0"/>
+      <line num="43" type="stmt" count="0"/>
+      <line num="47" type="stmt" count="0"/>
+      <line num="49" type="stmt" count="0"/>
+      <line num="52" type="method" name="callPost" visibility="protected" complexity="1" crap="1" count="16"/>
+      <line num="54" type="stmt" count="16"/>
+      <line num="55" type="stmt" count="16"/>
+      <line num="57" type="stmt" count="16"/>
+      <line num="61" type="stmt" count="16"/>
+      <line num="63" type="stmt" count="16"/>
+      <line num="66" type="method" name="callPatch" visibility="protected" complexity="1" crap="1" count="3"/>
+      <line num="68" type="stmt" count="3"/>
+      <line num="69" type="stmt" count="3"/>
+      <line num="71" type="stmt" count="3"/>
+      <line num="75" type="stmt" count="3"/>
+      <line num="77" type="stmt" count="3"/>
+      <metrics loc="79" ncloc="67" classes="1" methods="4" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="20" coveredstatements="15" elements="24" coveredelements="18"/>
+    </file>
+    <file name="/home/rsk/desarrollo/laravel-json-api/src/Tests/TestJsonApiLayoutTrait.php">
+      <class name="Reyesoft\JsonApi\Tests\TestJsonApiLayoutTrait" namespace="global">
+        <metrics complexity="2" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="3" elements="5" coveredelements="5"/>
+      </class>
+      <line num="29" type="method" name="newResource" visibility="protected" complexity="1" crap="1" count="5"/>
+      <line num="31" type="stmt" count="5"/>
+      <line num="34" type="method" name="newResourceFromLayout" visibility="protected" complexity="1" crap="1" count="5"/>
+      <line num="36" type="stmt" count="5"/>
+      <line num="38" type="stmt" count="5"/>
+      <metrics loc="40" ncloc="21" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="3" elements="5" coveredelements="5"/>
+    </file>
+    <file name="/home/rsk/desarrollo/laravel-json-api/src/Tests/TestJsonApiTrait.php">
+      <class name="Reyesoft\JsonApi\Tests\TestJsonApiTrait" namespace="global">
+        <metrics complexity="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+      </class>
+      <metrics loc="22" ncloc="13" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+    </file>
+    <metrics files="80" loc="5362" ncloc="4404" classes="65" methods="300" coveredmethods="281" conditionals="0" coveredconditionals="0" statements="1294" coveredstatements="1249" elements="1594" coveredelements="1530"/>
+  </project>
+</coverage>

@@ -1,0 +1,106 @@
+{
+    "name": "reyesoft/reactive-laravel-jobs",
+    "description": "Reactive Laravel Jobs",
+    "license": "proprietary",
+    "keywords": [
+        "reyesoft",
+        "laravel",
+        "jobs",
+        "laravel-jobs"
+    ],
+    "type": "library",
+    "authors": [
+        {
+            "name": "Pablo Reyes",
+            "email": "pablo@reyesoft.com",
+            "homepage": "https://pabloreyes.com/"
+        }
+    ],
+    "require": {
+        "php": "^7.3||^8.0",
+        "illuminate/support": "^8.0 || ^9.0",
+        "illuminate/queue": "^8.0 || ^9.0",
+        "illuminate/database": "^8.0 || ^9.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "6.2.0",
+        "reyesoft/ci": "1.4.3",
+        "nunomaduro/larastan": "^0.7.0",
+        "phpunit/phpunit": "^9.0.0",
+        "codedungeon/phpunit-result-printer": "^0.27.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Reyesoft\\ReactiveLaravelJobs\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/lib"
+        }
+    },
+    "scripts": {
+        "autofix": "sh autofix.sh",
+        "ci": [
+            "@ci-php-cpd",
+            "@ci-double-spaces",
+            "@phpstan",
+            "@ci-php-csniffer",
+            "@ci-php-cs-fixer",
+            "@ci-php-md"
+        ],
+        "ci-php-cpd": "sh resources/ci/php-cpd.sh",
+        "ci-double-spaces": [
+            "sh vendor/reyesoft/ci/tools/find-double-spaces.sh src",
+            "sh vendor/reyesoft/ci/tools/find-double-spaces.sh tests"
+        ],
+        "ci-php-csniffer": "sh resources/ci/php-csniffer.sh",
+        "ci-php-csniffer-fix": "sh resources/ci/php-csniffer-fix.sh",
+        "ci-php-cs-fixer": "sh vendor/reyesoft/ci/php/scripts/php-cs-fixer.sh",
+        "ci-php-md": "sh resources/ci/php-md.sh",
+        "phpstan": [
+            "@phpstan-src",
+            "@phpstan-tests"
+        ],
+        "phpstan-src": "./vendor/bin/phpstan analyse --memory-limit 1G -c resources/rules/phpstan.src.neon",
+        "phpstan-tests": "./vendor/bin/phpstan analyse --memory-limit 1G -c resources/rules/phpstan.tests.neon",
+
+        "ide-helper": [
+            "# php artisan ide-helper:meta --filename=bootstrap/cache/.phpstorm.meta.php",
+            "# php artisan ide-helper:generate bootstrap/cache/_ide_helper_meta.php"
+        ],
+        "ide-helper-models":[
+            "php artisan migrate",
+            "php artisan ide-helper:models --write",
+            "composer autofix"
+        ],
+        "coverage": [
+            "ulimit -Sn 50000 && phpdbg -d memory_limit=-1 -qrr ./vendor/bin/phpunit",
+            "php ./vendor/reyesoft/ci/tools/coverage-checker.php"
+        ],
+
+        "test": [
+            "./vendor/bin/phpunit -d memory_limit=-1"
+        ]
+    },
+    "extra": {
+        "coverage": {
+            "file": "./bootstrap/cache/clover.xml",
+            "thresholds": {
+                "global": { "lines": 95 },
+                "/src/Debounce": { "functions": 100 },
+                "/src/Throttle": { "functions": 100 }
+            }
+        }
+    },
+    "config": {
+        "preferred-install": "dist",
+        "platform": {
+            "php": "7.3"
+        },
+        "discard-changes": true,
+        "optimize-autoloader": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

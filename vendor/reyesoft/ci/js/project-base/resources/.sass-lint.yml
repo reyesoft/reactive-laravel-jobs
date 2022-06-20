@@ -1,0 +1,7 @@
+options:
+  # warning! relative path to this file
+  config-file: ../node_modules/reyesoft-ci/js/rules/.sass-lint.yml
+  files:
+    include: 'src/**/*.s+(a|c)ss'
+    rules:
+      # Project particular extends

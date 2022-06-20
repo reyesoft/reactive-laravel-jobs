@@ -1,0 +1,102 @@
+options:
+  formatter: stylish
+  max-warnings: 50
+rules:
+  # Extends
+  extends-before-mixins: 2
+  extends-before-declarations: 2
+  placeholder-in-extend: 2
+
+  # Mixins
+  mixins-before-declarations: 2
+
+  # Line Spacing
+  one-declaration-per-line: 2
+  empty-line-between-blocks: 2
+  single-line-per-selector: 2
+
+  # Disallows
+  no-attribute-selectors: 0
+  no-color-hex: 0
+  no-color-keywords: 2
+  no-color-literals: 2
+  no-combinators: 0
+  no-css-comments: 0
+  no-debug: 0
+  no-disallowed-properties: 0
+  no-duplicate-properties:
+    - 2
+    - exclude: ["position"]
+  no-empty-rulesets: 2
+  no-extends: 0
+  no-ids: 0
+  no-important: 0
+  no-invalid-hex: 2
+  no-mergeable-selectors: 2
+  no-misspelled-properties:
+    - 2
+    - extra-properties: ["-o-filter", "-moz-filter"]
+  no-qualifying-elements: 0
+  no-trailing-whitespace: 2
+  no-trailing-zero: 2
+  no-transition-all: 2
+  no-universal-selectors: 0
+  no-url-domains: 2
+  no-url-protocols: 2
+  no-vendor-prefixes: 0
+  no-warn: 0
+  property-units: 0
+
+  # Nesting
+  declarations-before-nesting: 0
+  force-attribute-nesting: 0
+  force-element-nesting: 0
+  force-pseudo-nesting: 0
+
+  # Name Formats
+  class-name-format: 2
+  function-name-format: 2
+  id-name-format: 0
+  mixin-name-format: 0
+  placeholder-name-format: 0
+  variable-name-format: 0
+
+  # Style Guide
+  attribute-quotes: 0
+  bem-depth: 0
+  border-zero: 0
+  brace-style: 2
+  clean-import-paths: 0
+  empty-args: 2
+  hex-length: 0
+  hex-notation: 2
+  indentation:
+    - 1
+    - size: 4
+  leading-zero:
+    - 1
+    - include: true
+  max-line-length: 0
+  max-file-line-count: 2
+  nesting-depth: 0
+  property-sort-order: 0
+  pseudo-element: 0
+  quotes: 2
+  shorthand-values: 0
+  url-quotes: 0
+  variable-for-property: 0
+  zero-unit: 2
+
+  # Inner Spacing
+  space-after-comma: 2
+  space-before-colon: 0
+  space-after-colon: 2
+  space-before-brace: 2
+  space-before-bang: 2
+  space-after-bang: 0
+  space-between-parens: 0
+  space-around-operator: 2
+
+  # Final Items
+  trailing-semicolon: 2
+  final-newline: 2

@@ -1,0 +1,14 @@
+includes:
+    # disable next line with laravel, check accepted rules on saldo project
+	- ../../vendor/phpstan/phpstan-strict-rules/rules.neon
+	- ../../vendor/nunomaduro/larastan/extension.neon
+
+parameters:
+    paths:
+        - ../../app
+        - ../../bootstrap/*.php
+        - ../../config
+    level: max
+    ignoreErrors:
+        ## mercadopago official library
+        - '#Access to protected property MercadoPago\\Payment#'

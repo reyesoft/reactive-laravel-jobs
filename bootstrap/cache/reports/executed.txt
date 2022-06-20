@@ -1,0 +1,4 @@
+Debounceable (Tests\Debounce\Debounceable)
+ [x] Create debounceable job
+ [x] Create debounceable job via constructor
+
