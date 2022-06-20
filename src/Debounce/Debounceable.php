@@ -11,12 +11,15 @@ declare(strict_types=1);
 namespace Reyesoft\ReactiveLaravelJobs\Debounce;
 
 use Illuminate\Support\Facades\Cache;
+use Illuminate\Support\Facades\Log;
 
 /**
  * @mixin ShouldDebounce
  */
 trait Debounceable
 {
+    public $reactive_job_id = 0;
+
     /**
      * Dispatch debounced the job with the given arguments.
      */
@@ -42,11 +45,14 @@ trait Debounceable
 
     public function handle()
     {
+        Log::debug('handling id '.$this->reactive_job_id.' / '.$this->getIdForDebounce() );
+
         if (Cache::decrement('debounceable_' . $this->getIdForDebounce()) > 0) {
             return;
         }
 
         Cache::forget('debounceable_' . $this->getIdForDebounce());
+
 
         return $this->debouncedHandle();
     }
