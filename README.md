@@ -8,6 +8,9 @@ composer require reyesoft/reactive-laravel-jobs
 
 ## Features
 
+* A same job dispatched various times can be grouped based on some value, like user_id.
+* Delay time can be changed (takes last delay value).
+
 ## Fantastic Laravel jobs types
 
 ### Debounce Laravel Job
@@ -17,13 +20,42 @@ composer require reyesoft/reactive-laravel-jobs
 Dispatch delayed job only after delay value and passed without another job dispatched.
 
 ```php
+use Reyesoft\ReactiveLaravelJobs\Debounce\Debounceable;
+use Reyesoft\ReactiveLaravelJobs\Debounce\ShouldDebounce;
+
+final class DebounceableExampleJob implements ShouldDebounce
+{
+    use Debounceable;
+    use Dispatchable;
+    use Queueable;
+
+    public $param1 = '';
+
+    public function __construct($param1)
+    {
+        $this->param1 = $param1;
+    }
+
+    public function getIdForDebounce(): string
+    {
+        return self::class . $this->param1;
+    }
+
+    public function debouncedHandle(): void
+    {
+        // handle job things...
+    }
+}
+```
+
+```php
 SendNotificationJob::dispatchDebounced('You have 1 item.')->delay(5);
-SendNotificationJob::dispatchDebounced('You have 2 items')->delay(5);
-SendNotificationJob::dispatchDebounced('You have 3 items')->delay(5);
+SendNotificationJob::dispatchDebounced('You have 2 items.')->delay(5);
+SendNotificationJob::dispatchDebounced('You have 3 items.')->delay(5);
 sleep(10);
-SendNotificationJob::dispatchDebounced('You have 4 items')->delay(5);
+SendNotificationJob::dispatchDebounced('You have 4 items.')->delay(5);
 sleep(1);
-SendNotificationJob::dispatchDebounced('You have 5 items')->delay(5);
+SendNotificationJob::dispatchDebounced('You have 5 items.')->delay(5);
 
 // Do
 You have 3 items.
