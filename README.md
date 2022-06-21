@@ -23,7 +23,7 @@ Dispatch delayed job only after delay value and passed without another job dispa
 use Reyesoft\ReactiveLaravelJobs\Debounce\Debounceable;
 use Reyesoft\ReactiveLaravelJobs\Debounce\ShouldDebounce;
 
-final class DebounceableExampleJob implements ShouldDebounce
+final class DebouncedNotificationJob implements ShouldDebounce
 {
     use Debounceable;
     use Dispatchable;
@@ -36,26 +36,26 @@ final class DebounceableExampleJob implements ShouldDebounce
         $this->param1 = $param1;
     }
 
-    public function getIdForDebounce(): string
+    public function uniqueId()
     {
-        return self::class . $this->param1;
+        return $this->param1;
     }
 
     public function debouncedHandle(): void
     {
-        // handle job things...
+        echo PHP_EOL . $this->param1;
     }
 }
 ```
 
 ```php
-SendNotificationJob::dispatchDebounced('You have 1 item.')->delay(5);
-SendNotificationJob::dispatchDebounced('You have 2 items.')->delay(5);
-SendNotificationJob::dispatchDebounced('You have 3 items.')->delay(5);
+DebouncedNotificationJob::dispatchDebounced('You have 1 item.')->delay(5);
+DebouncedNotificationJob::dispatchDebounced('You have 2 items.')->delay(5);
+DebouncedNotificationJob::dispatchDebounced('You have 3 items.')->delay(5);
 sleep(10);
-SendNotificationJob::dispatchDebounced('You have 4 items.')->delay(5);
+DebouncedNotificationJob::dispatchDebounced('You have 4 items.')->delay(5);
 sleep(1);
-SendNotificationJob::dispatchDebounced('You have 5 items.')->delay(5);
+DebouncedNotificationJob::dispatchDebounced('You have 5 items.')->delay(5);
 
 // Do
 You have 3 items.
@@ -66,22 +66,58 @@ You have 5 items.
 
 Dispatch delayed job, then ignores subsequent dispatched jobs for a duration determined by delay value, then repeats this process when.
 
-
 ![Throttle diagram, from RxJs documentation](https://rxjs.dev/assets/images/marble-diagrams/throttle.svg)
 
+On Laravel 9, it can be done with [Unique Jobs](https://laravel.com/docs/9.x/queues#unique-jobs).
+
 ```php
+use Illuminate\Contracts\Queue\ShouldQueue;
+use Illuminate\Contracts\Queue\ShouldBeUnique;
+ 
+class ThrottledNotificationJob implements ShouldQueue, ShouldBeUnique
+{
+    public $param1 = '';
+
+    public function __construct($param1)
+    {
+        $this->param1 = $param1;
+    }
+
+    /**
+     * The number of seconds after which the job's unique lock
+     * will be released.
+     */
+    public $uniqueFor = 3600;
+ 
+    public function uniqueId()
+    {
+        return $this->param1;
+    }
+
+    public function handle(): void
+    {
+        echo PHP_EOL . $this->param1;
+    }
+}
+```
+
+```php
+ThrottledNotificationJob::dispatch('You have 1 item.')->delay(5);
+ThrottledNotificationJob::dispatch('You have 2 items.')->delay(5);
+ThrottledNotificationJob::dispatch('You have 3 items.')->delay(5);
+sleep(10);
+ThrottledNotificationJob::dispatch('You have 4 items.')->delay(5);
+sleep(1);
+ThrottledNotificationJob::dispatch('You have 5 items.')->delay(5);
+
+// Do
+You have 1 item.
+You have 4 items.
 ```
 
 ## Testing
 
 ```bash
-## build and push
-docker build -t pablorsk/reactive-laravel-jobs:7.4 --build-arg PHP_VERSION=7.4 -f resources/Dockerfile ./resources/
-docker build -t pablorsk/reactive-laravel-jobs:8.0 --build-arg PHP_VERSION=8.0 -f resources/Dockerfile ./resources/
-docker push pablorsk/reactive-laravel-jobs:7.4
-docker push pablorsk/reactive-laravel-jobs:8.0
-
-## local use
-docker run -it --rm --name jsonapi74 -e PHP_EXTENSIONS="sqlite3 pdo_mysql pdo_sqlite" -v "$PWD":/usr/src/app pablorsk/reactive-laravel-jobs:7.4 bash
-docker run -it --rm --name jsonapi80 -e PHP_EXTENSIONS="sqlite3 pdo_mysql pdo_sqlite" -v "$PWD":/usr/src/app pablorsk/reactive-laravel-jobs:8.0 bash
+composer autofix
+composer test
 ```
