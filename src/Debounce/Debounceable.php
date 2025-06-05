@@ -61,6 +61,6 @@ trait Debounceable
 
         Cache::forget('debounceable_' . $this->getIdForDebounce());
 
-        return $this->debouncedHandle();
+        $this->debouncedHandle();
     }
 }

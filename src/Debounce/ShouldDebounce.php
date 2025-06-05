@@ -17,7 +17,7 @@ interface ShouldDebounce extends ShouldQueue
     public function getIdForDebounce(): string;
 
     /**
-     * @return bool|void
+     * Execute the debounced job.
      */
     public function debouncedHandle();
 }
