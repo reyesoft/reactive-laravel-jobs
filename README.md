@@ -11,7 +11,7 @@ composer require reyesoft/reactive-laravel-jobs
 * A same job dispatched various times can be grouped based on some value, like user_id.
 * Delay time can be changed (takes last delay value).
 
-## Fantastic Laravel jobs types
+## Fantastic Laravel job types
 
 ### Debounce Laravel Job
 
